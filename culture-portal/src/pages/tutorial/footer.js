@@ -25,12 +25,12 @@ const Footer = () => {
              <div className='block-footer'>
                  By Rsschool
                 <ul>
-                   <li><Link to="/Dmitry/" className='link' >Dmitry Legankov</Link></li>
-                   <li><Link to="/Nikolay/" className='link' >Nikolay Shebeko</Link></li>
-                   <li><Link to="/Maksim/" className='link' >Maksim Kryshneu</Link></li>
-                   <li><Link to="/Ali/" className='link' >Ali Gurbanov</Link></li>
-                   <li><Link to="/Vladimir/" className='link' >Vladimir Zhdanov</Link></li>
-                   <li><Link to="/Pavel/" className='link' >Pavel Andreikovets</Link></li>
+                   <li><a href="https://github.com/Asindeton" className='link' >Dmitry Legankov</a></li>
+                   <li><a href="https://github.com/shebekocom" className='link' >Nikolay Shebeko</a></li>
+                   <li><a href="https://github.com/Kr-Mx" className='link' >Maksim Kryshneu</a></li>
+                   <li><a href="https://github.com/GurbanovAli" className='link' >Ali Gurbanov</a></li>
+                   <li><a href="https://github.com/vukzh" className='link' >Vladimir Zhdanov</a></li>
+                   <li><a href="https://github.com/pavlenstory" className='link' >Pavel Andreikovets</a></li>
                 </ul>
              </div>
              <div className='block-footer'>

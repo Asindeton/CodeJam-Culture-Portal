@@ -22,5 +22,6 @@ body {
 }
 
 .block-footer {
+   display: grid;
    margin: 5%;
 }
