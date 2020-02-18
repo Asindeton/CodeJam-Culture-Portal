@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from "gatsby"
 
+import ScrollUpButton from "react-scroll-up-button"
+
 const Footer = () => {
 
       return (
+         <>
          <div className='footer-main'>
              <img className='block-footer'/>
              <div className='block-footer'>
@@ -37,9 +40,10 @@ const Footer = () => {
                  Contacts
                 <button>Feedback on Rsschool</button>
                 <button>Submit bag</button>
-                <button>Go up</button>
              </div>
+             <ScrollUpButton />
          </div>
+         </>
       )
 }
 
