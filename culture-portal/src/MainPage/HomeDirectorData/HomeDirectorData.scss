@@ -1,0 +1,403 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro.woff') format('woff');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Bold.woff') format('woff');
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-SemiBold.woff') format('woff');
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+.home__director-data-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  color: white;
+}
+
+.home__director-data-wrapper {
+  width: 100%;
+  background-color: black;
+}
+
+.home__director-data-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.home__director-data-image {
+  max-width: 300px;
+  max-height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.home__director-data-description {
+  height: 50vh;
+  padding-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__director-data-title {
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+  padding-right: 160px;
+  position: absolute;
+}
+
+.home__director-data-about {
+  z-index: 0;
+  position: relative;
+  font-family: "Gotham Pro";
+  text-transform: uppercase;
+  line-height: 92px;
+  font-weight: Bold;
+  font-size: 96px;
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(255, 255, 255, 0.13)
+}
+
+.home__director-data-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 85px;
+  text-transform: uppercase;
+  align-self: center;
+  padding-top: 20vh;
+}
+
+.home__director-data-name-second {
+  margin-left: 72px;
+}
+
+.home__director-data-button {
+  width: content-box;
+  margin-top: 44px;
+  margin-left: 144px;
+  height: 37px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+}
+
+.home__director-data-button:hover {
+  background-color: black;
+
+}
+
+.home__director-data-point-wrapper {
+text-align:center;
+  display: flex;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.home__director-data-point-number {
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 46px;
+  letter-spacing: -4px;
+}
+
+.home__director-data-point-container {
+  margin-top: 53px;
+}
+
+@media screen and (max-width: 720px) {
+  .home__director-data-name-wrapper {
+    padding-top: 100px;
+  }
+  .home__director-data-about {
+    font-size: 72px;
+  }
+  .home__director-data-title {
+    font-size: 16px;
+  }
+  .home__director-data-name-wrapper {
+    font-size: 48px;
+    line-height: 118.2%;
+  }
+  .home__director-data-name-second {
+    margin-left: 36px;
+  }
+  .home__director-data-container {
+    height: 700px;
+  }
+  .home__director-data-button {
+    font-size: 14px;
+    margin-left: 72px;
+    margin-top: 22px;
+  }
+  .home__director-data-point-number {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home__director-data-about {
+    font-size: 48px;
+  }
+  .home__director-data-title {
+    font-size: 14px;
+    margin-left: 10vw;
+    padding-right: 15px;
+    max-width: calc(75% - 30px);
+  }
+  .home__director-data-name-wrapper {
+    font-size: 38px;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home__director-data-title {
+    margin-left: 0;
+    padding-right: 55px;
+    max-width: calc(100% - 30px);
+  }
+  .home__director-data-description {
+    padding-top: 40px;
+  }
+  .home__director-data-container {
+    height: 550px;
+  }
+}
+
+//@font-face {
+//  font-family: 'Gotham Pro';
+//  src: url('../fonts/GothamPro.woff') format('woff');
+//
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Gotham Pro';
+//  src: url('../fonts/GothamPro-Bold.woff') format('woff');
+//
+//  font-weight: bold;
+//  font-style: normal;
+//}
+//
+//@font-face {
+//  font-family: 'Source Sans Pro';
+//  src: url('../fonts/SourceSansPro-SemiBold.woff') format('woff');
+//
+//  font-weight: 600;
+//  font-style: normal;
+//}
+//
+//.home__director-data-container {
+//  max-width: 1440px;
+//  margin: 0 auto;
+//  height: 816px;
+//  color: white;
+//}
+//
+//.home__director-data-wrapper {
+//  width: 100%;
+//  background-color: black;
+//}
+//
+//.home__director-data-image-wrapper {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  margin-top: 20px;
+//}
+//
+//.home__director-data-image {
+//  max-width: 300px;
+//  max-height: 300px;
+//  background-repeat: no-repeat;
+//  background-size: contain;
+//  background-position-x: center;
+//  background-position-y: center;
+//  border: 2px solid white;
+//  border-radius: 5px;
+//}
+//
+//.home__director-data-description {
+//  height: 50vh;
+//  padding-top: 20vh;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+//
+//.home__director-data-title {
+//  font-size: 18px;
+//  line-height: 24px;
+//  display: flex;
+//  align-self: center;
+//  align-items: center;
+//  justify-content: flex-end;
+//  z-index: 1;
+//  position: absolute;
+//}
+//
+//.home__director-data-about {
+//  z-index: 0;
+//  position: relative;
+//  font-family: "Gotham Pro";
+//  text-transform: uppercase;
+//  line-height: 92px;
+//  font-weight: Bold;
+//  font-size: 96px;
+//  display: flex;
+//  justify-content: flex-end;
+//  color: rgba(255, 255, 255, 0.13)
+//}
+//
+//.home__director-data-name-wrapper {
+//  display: flex;
+//  flex-direction: column;
+//  font-family: Gotham Pro;
+//  font-style: normal;
+//  font-weight: bold;
+//  font-size: 72px;
+//  line-height: 85px;
+//  text-transform: uppercase;
+//  align-self: center;
+//  padding-top: 189px;
+//}
+//
+//.home__director-data-name-second {
+//  margin-left: 72px;
+//}
+//
+//.home__director-data-button {
+//  width: content-box;
+//  margin-top: 44px;
+//  margin-left: 144px;
+//  height: 37px;
+//  border: 1px solid #FFFFFF;
+//  border-radius: 4px;
+//  background-color: rgba(255, 255, 255, 0);
+//  text-transform: uppercase;
+//}
+//
+//.home__director-data-button:hover {
+//  background-color: black;
+//
+//}
+//
+//.home__director-data-point-wrapper {
+//
+//  display: flex;
+//  flex-direction: column;
+//  font-family: Source Sans Pro;
+//  font-style: normal;
+//  font-weight: normal;
+//  font-size: 12px;
+//  line-height: 12px;
+//  display: flex;
+//  align-items: center;
+//}
+//
+//.home__director-data-point-number {
+//  font-family: Gotham Pro;
+//  font-style: normal;
+//  font-weight: normal;
+//  font-size: 48px;
+//  line-height: 46px;
+//  letter-spacing: -4px;
+//}
+//
+//.home__director-data-point-container {
+//  margin-top: 53px;
+//}
+//
+//@media screen and (max-width: 720px) {
+//  .home__director-data-name-wrapper {
+//    padding-top: 100px;
+//  }
+//  .home__director-data-about {
+//    font-size: 72px;
+//  }
+//  .home__director-data-title {
+//    font-size: 16px;
+//  }
+//  .home__director-data-name-wrapper {
+//    font-size: 48px;
+//    line-height: 118.2%;
+//  }
+//  .home__director-data-name-second {
+//    margin-left: 36px;
+//  }
+//  .home__director-data-container {
+//    height: 700px;
+//  }
+//  .home__director-data-button {
+//    font-size: 14px;
+//    margin-left: 72px;
+//    margin-top: 22px;
+//  }
+//  .home__director-data-point-number {
+//    font-size: 38px;
+//  }
+//}
+//
+//@media screen and (max-width: 540px) {
+//  .home__director-data-about {
+//    font-size: 48px;
+//  }
+//  .home__director-data-title {
+//    font-size: 14px;
+//    margin-left: 10vw;
+//    max-width: calc(75% - 30px);
+//  }
+//  .home__director-data-name-wrapper {
+//    font-size: 38px;
+//    line-height: 100%;
+//  }
+//}
+//
+//@media screen and (max-width: 400px) {
+//  .home__director-data-title {
+//    margin-left: 0;
+//    max-width: calc(100% - 30px);
+//  }
+//  .home__director-data-description {
+//    padding-top: 40px;
+//  }
+//}
