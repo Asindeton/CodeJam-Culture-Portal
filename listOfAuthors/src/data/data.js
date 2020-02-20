@@ -90,7 +90,7 @@ const filmDirectorsData = {
         "name": "Моисей",
         "surname": "Беров",
         "patronymic": "Залманович",
-        "yearsOfLife":"27.11.1909 - 2003",
+        "yearsOfLife":"10.12.1909 - 2003",
         "picture": "https://upload.wikimedia.org/wikipedia/ru/6/64/Moisey_Zalmanovich_Berov.jpg",
         "biography":{
             "1909": "Родился в еврейской семье в Велиже (ныне Смоленская область)",
@@ -193,7 +193,7 @@ const filmDirectorsData = {
         "name": "Александр",
         "surname": "Гинцбург",
         "patronymic": "Ильич",
-        "yearsOfLife":"15.02.1907 - 10.03.1972",
+        "yearsOfLife":"01.03.1907 - 10.03.1972",
         "picture": " https://www.kino-teatr.ru/acter/album/25515/10383.jpg",
         "biography":{
             "1907": "Родился  в Рогачёве (ныне Гомельская область, Беларусь)",
@@ -286,7 +286,7 @@ const filmDirectorsData = {
         "name": "Александр",
         "surname": "Гуткович",
         "patronymic": "Захарович",
-        "yearsOfLife":"20.12.1920 - 9.09.1989",
+        "yearsOfLife":"20.12.1920 - 19.09.1989",
         "picture": " https://upload.wikimedia.org/wikipedia/ru/5/51/Alexander_Zakharovich_Gutkovich.jpg",
         "biography":{
             "1920": "Родился в местечке Аскеры (ныне Бешенковичский район, Витебская область, Белоруссия) в семье кузнеца Залмана и Цивы Гуткович. Окончил сельскую школу",
@@ -381,9 +381,9 @@ const filmDirectorsData = {
     "korshSablin": {
       "ru":{
         "name": "Владимир ",
-        "surname": "Корш-Са́блин",
+        "surname": "Корш-Саблин",
         "patronymic": "Владимирович ",
-        "yearsOfLife":"16.03.1900 — 06.08.1974",
+        "yearsOfLife":"29.03.1900 — 06.08.1974",
         "picture": "https://upload.wikimedia.org/wikipedia/commons/2/23/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87_%D0%9A%D0%BE%D1%80%D1%88-%D0%A1%D0%B0%D0%B1%D0%BB%D0%B8%D0%BD.gif",
         "biography":{
             "1900": "Родился  в Москве",
@@ -445,7 +445,7 @@ const filmDirectorsData = {
         "name": "Юрий",
         "surname": "Хащеватский",
         "patronymic": "Иосифович",
-        "yearsOfLife":"18.09.1947",
+        "yearsOfLife":"18.10.1947",
         "picture": "https://yt3.ggpht.com/a/AGF-l79gh-zsahfnOWMVkxBCG3I1lxq8m3W0SYMe9A=s900-c-k-c0xffffffff-no-rj-mo",
         "biography":{
             "1947": "Родился  в Одессе",
@@ -454,7 +454,7 @@ const filmDirectorsData = {
             "1978": "режиссёром на Белорусском телевидении",
             "1981": "режиссёром на ЛГИТМиК",
             "1926": "актёр и режиссёр киностудии Советская Беларусь специального управления Белгоскино (позже Беларусьфильм); снимал комедии, фильмы-драмы, биографические фильмы.",
-            "1945—1960": " художественным руководителем киностудии Беларусьфильм",
+            "1945—1960": "художественным руководителем киностудии Беларусьфильм",
             "1962—1974": "первый секретарь Союза кинематографистов БССР. Член Союза кинематографистов СССР.",
             "1974": "Умер"
           },
@@ -513,9 +513,9 @@ const filmDirectorsData = {
     },
     "maryhin": {
       "ru":{
-        "name": "Ю́рий",
-        "surname": "Мару́хин",
-        "patronymic": "Алекса́ндрович",
+        "name": "Юрий",
+        "surname": "Марухин",
+        "patronymic": "Александрович",
         "yearsOfLife":"13.07.1938",
         "picture": "https://www.sb.by/upload/resize_cache/slam.image/iblock/578/855_2000_1/578d00cbe0034068bf4726daf25048d0.jpg",
         "biography":{

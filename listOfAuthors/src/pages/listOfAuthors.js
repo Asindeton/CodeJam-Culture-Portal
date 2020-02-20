@@ -2,20 +2,15 @@ import React, { Fragment } from 'react';
 import { Link } from "gatsby"
 import Image from "../components/image"
 import CardOfAuthor from '../components/cardOfAuthor';
+import SearchAuthors from '../components/searchAuthors';
 
 import DataForList from "../data/prepareDataForList"
 
 
 
-
-
-
-//import filmDirectorsData from '../data/data';
-
-console.log ('>>> ' + DataForList[0].ru.fullName)
-
 const ListOfAuthors = () => (
-  <Fragment> y
+  <Fragment> 
+    <SearchAuthors/> 
     <div className='flexWrap'>
 
       <CardOfAuthor imgName='1.jpg' name={DataForList[0].ru.fullName} years={DataForList[0].ru.yearsOfLife} description={DataForList[0].ru.smallDescription}/>
