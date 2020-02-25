@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import Footer from './tutorial/footer';
-import Main from './Main';
+import Footer from './Footer';
+import Header from '../components/Header/Header'
 
 class Worklog extends React.Component {
    constructor(props){
@@ -12,7 +12,7 @@ class Worklog extends React.Component {
    render(){
       return(
          <>
-           <Main />
+           <Header />
            <div className='table'>
             <table>
                <tr>

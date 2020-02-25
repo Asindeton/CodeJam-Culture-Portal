@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import Footer from './tutorial/footer';
-import Main from './Main';
+import Footer from './Footer';
+import Header from '../components/Header/Header'
 import ReactAnimation from 'react-animation';
 import AnimateOnChange from 'react-animate-on-change';
 import { useSpring, animated as a } from "react-spring";
@@ -14,7 +14,7 @@ const App = () => {
     marginTop: greetingStatus ? 0 : -300
   });
   return (
-    <div className="container">
+    <div className="contain">
       <div className="button-container">
         <button onClick={() => displayGreeting(a => !a)} className="button">
           info
@@ -37,7 +37,7 @@ const url= 'https://jardin.ee/wp-content/uploads/2014/08/No-profile-LinkedIn-e15
 const Developers = (props) => {
    return (
       <>
-          <Main/>
+          <Header />
           <div>
              <ul className='team' >
                 <li className='team-list' >

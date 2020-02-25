@@ -1,23 +1,22 @@
 import React,{Component} from "react"
 import { Link } from "gatsby"
 
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './index.css'
-import Footer from './tutorial/footer'
-import Main from './Main'
-import SimpleSlider from './gallery'
+import Footer from './Footer'
+import Header from '../components/Header/Header'
+import Main from '../components/Main'
 
 
 const IndexPage = () => {
  return (
-  <div>
-     <Main />
-       <SimpleSlider />
-    <Footer />
-  </div>
-)
+    <div>
+       <Header />
+         <Main />
+       <Footer />
+    </div>
+  )
 }
 
 

@@ -1,0 +1,25 @@
+.slider {
+   width: 80%;
+   height: 73vh;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+.ReactGridGallery {
+   margin-left: 15%;
+   margin-top: 4%;
+}
+
+.img-list {
+   width: 400px;
+   font-size: 20px;
+   cursor: pointer;
+   border: 1px solid;
+   border-radius: 5px;
+}
+
+.slider-img {
+   margin: 20%;
+}

@@ -17,33 +17,6 @@ body {
    color: white;
 }
 
-.slider {
-   width: 80%;
-   height: 73vh;
-   margin-left: 10%;
-   margin-right: 10%;
-   margin-top: 5%;
-   margin-bottom: 5%;
-   border-bottom: 3px solid;
-}
-
-.ReactGridGallery {
-   margin-left: 15%;
-   margin-top: 4%;
-}
-
-.img-list {
-   width: 400px;
-   font-size: 20px;
-   cursor: pointer;
-   border: 1px solid;
-   border-radius: 5px;
-}
-
-.slider-img {
-   margin: 20%;
-}
-
 .footer-main {
    width: 100%;
    height: 32vh;
@@ -111,6 +84,7 @@ li {
 }
 
 .table {
+   width: 100%;
    height: 600px;
    margin: 12.5%;
    margin-top: 5%;
@@ -189,7 +163,7 @@ img:hover {
    color: #000;
 }
 
-.container {
+.contain {
    margin-top: -5px;
    height: 11vh;
    display: flex;
