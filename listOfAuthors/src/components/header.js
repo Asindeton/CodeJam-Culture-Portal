@@ -28,7 +28,6 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-    <Link to="/listOfAuthors/">Go to page list of authors</Link>
   </header>
 )
 

@@ -4,14 +4,14 @@ import Form from 'react-bootstrap/Form';
 //import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const SearchAuthor = ({searchNameF,searchPlaceF}) => (
+const SearchAuthor = ({searchNameF,searchPlaceF,searchNamePlaceholder,searchPlacePlaceholder}) => (
   <Form style={{ margin: `2rem` }} >
     <Form.Row>
       <Col onChange={(e) => {searchNameF(e.target.value);}}>
-        <Form.Control placeholder="Name" />
+        <Form.Control placeholder={searchNamePlaceholder} />
       </Col>
       <Col onChange={(e) => {searchPlaceF(e.target.value);}}>
-        <Form.Control placeholder="Place of birth" />
+        <Form.Control placeholder={searchPlacePlaceholder} />
       </Col>
     </Form.Row>
   </Form>

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Image = ({ imgName }) => (
