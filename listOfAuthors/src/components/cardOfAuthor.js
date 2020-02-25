@@ -17,8 +17,8 @@ const CardOfAuthor = ({imgName,name,years,description,detail}) => (
       <Card.Text className='text-muted'>
         {description}
       </Card.Text>
+
   
-//   change to the page of author    
       <Link to="/listOfAuthors/"  className='bottom'>{detail}</Link> 
   
   
