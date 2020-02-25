@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DirectorActivityMap from "./DirectorPage/Map/DirectorActivityMap";
+import DirectorMovies from "./DirectorPage/Youtube/DirectorMovies";
+import DirectorWorks from "./DirectorPage/Works/DirectorWorks";
+import filmDirectorsData from "./MainPage/data";
+import DirectorTimeLine from "./DirectorPage/DirectorTimeLine/DirectorTimeLine";
+const mapsLocation = {
+  'Всероссийский государственный институт кинематографии имени С. А. Герасимова': [55.77583, 37.63722],
+  'Новосибирск': [55.01667, 82.91667],
+  'Белорусский государственный университет': [53.89389, 27.547083],
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <DirectorActivityMap data={{mapsLocation}}></DirectorActivityMap>
+      <DirectorMovies></DirectorMovies>
+      <DirectorWorks data={filmDirectorsData.arsanskiy}/>
+      <DirectorTimeLine data={filmDirectorsData.arsanskiy}/>
+      </>
+      );
+      }
 
-export default App;
+      export default App;
