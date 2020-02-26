@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import Footer from './Footer';
-import Header from '../components/Header/Header'
+import Layout from '../components/layout';
 import ReactAnimation from 'react-animation';
 import AnimateOnChange from 'react-animate-on-change';
 import { useSpring, animated as a } from "react-spring";
@@ -36,8 +35,7 @@ const App = () => {
 const url= 'https://jardin.ee/wp-content/uploads/2014/08/No-profile-LinkedIn-e1566456325422-320x320.jpg';
 const Developers = (props) => {
    return (
-      <>
-          <Header />
+      <Layout>
           <div>
              <ul className='team' >
                 <li className='team-list' >
@@ -76,8 +74,7 @@ const Developers = (props) => {
                 </li>
              </ul>
           </div>
-          <Footer />
-      </>
+      </Layout>
    )
 }
 

@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import Footer from './Footer';
-import Header from '../components/Header/Header'
+import Layout from '../components/layout';
 
 class Worklog extends React.Component {
    constructor(props){
@@ -11,8 +10,7 @@ class Worklog extends React.Component {
    }
    render(){
       return(
-         <>
-           <Header />
+         <Layout>
            <div className='table'>
             <table>
                <tr>
@@ -35,8 +33,7 @@ class Worklog extends React.Component {
              </tr>
             </table>
             </div>
-           <Footer/>
-         </>
+         </Layout>
       )
    }
 }

@@ -1,34 +1,32 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
 
-const Layout = ({ children, data, lng }) => {
-  const siteData = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+import React from "react"
+import PropTypes from "prop-types"
+
+import Header from "./Header/Header"
+import Footer from '../pages/Footer'
+import "./layout.css"
+
+const Layout = ({ children, title }) => {
 
   return (
     <>
-
-
-
+      <Header siteTitle={title} />
+      <div>
+        <main>{children}</main>
+      </div>
+      <Footer />
     </>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  data: PropTypes.object,
-};
+}
 
-Layout.defaultProps = {
-  data: {},
-};
-
-export default Layout;
+export default Layout

@@ -1,5 +1,6 @@
 import React from "react";
 import { Timeline, Event } from "react-timeline-scribble";
+import LocalizedStrings from 'react-localization';
 
 export default function DirectorTimeLine(props) {
   const language = 'ru';

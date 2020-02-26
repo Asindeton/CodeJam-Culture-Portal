@@ -17,8 +17,8 @@ function Main() {
     <>
        <DirectorActivityMap data={{mapsLocation}}></DirectorActivityMap>
        <DirectorMovies></DirectorMovies>
-       <DirectorWorks data={filmDirectorsData.arsanskiy}/>
-       <DirectorTimeLine data={filmDirectorsData.arsanskiy}/>
+
+       
        <SimpleSlider />
     </>
   );

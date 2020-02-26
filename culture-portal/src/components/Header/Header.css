@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap');
 
 .header{
-  width:100%;
-  background-color: #000;
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
@@ -11,6 +9,11 @@
 .header__colum{
   margin-top: 15px;
   padding: 0px;
+}
+
+.header__container{
+   width: 1700px;
+   background-color: #000;
 }
 
 .logotype{

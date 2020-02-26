@@ -3,19 +3,17 @@ import { Link } from "gatsby"
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import './index.css'
-import Footer from './Footer'
-import Header from '../components/Header/Header'
+import './loa.css';
+
+
 import Main from '../components/Main'
 
 
 const IndexPage = () => {
  return (
-    <div>
-       <Header />
+    <Layout title='Culture portal'>
          <Main />
-       <Footer />
-    </div>
+    </Layout>
   )
 }
 

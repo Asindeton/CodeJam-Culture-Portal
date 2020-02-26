@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Accordion, Card, useAccordionToggle} from "react-bootstrap";
 import minus from './images/minus.png';
 import plus from './images/plus.png';
+import LocalizedStrings from 'react-localization';
 
 function CustomToggle({children, eventKey}) {
   const [open, setOpen] = useState(false);

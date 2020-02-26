@@ -15,7 +15,7 @@ const Footer = () => {
                  MENU
                 <ul>
                    <li><Link to="/IndexPage/" className='link' >Main Home</Link></li>
-                   <li><Link to="/Movie/" className='link' >Movie Directors</Link></li>
+                   <li><Link to="/ListOfAuthors/" className='link' >Movie Directors</Link></li>
                    <li><Link to="/About/" className='link' >About</Link></li>
                 </ul>
              </div>

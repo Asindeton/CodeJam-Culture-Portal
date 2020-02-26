@@ -1,0 +1,23 @@
+.flexWrap {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.card {
+  margin: 2rem;
+  width: 18rem
+}
+.center {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center
+}
+.rel {
+  position: relative
+}
+.bottom {
+  position: absolute;
+  bottom: 1rem;
+}
