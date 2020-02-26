@@ -4,6 +4,7 @@ import DirectorMovies from "./DirectorPage/Youtube/DirectorMovies";
 import DirectorWorks from "./DirectorPage/Works/DirectorWorks";
 import filmDirectorsData from "./MainPage/directorsData";
 import DirectorTimeLine from "./DirectorPage/DirectorTimeLine/DirectorTimeLine";
+import directorsData from "./MainPage/directorsData";
 import SimpleSlider from './DirectorPage/Gallery/Gallery'
 
 const mapsLocation = {
@@ -17,8 +18,9 @@ function Main() {
     <>
        <DirectorActivityMap data={{mapsLocation}}></DirectorActivityMap>
        <DirectorMovies></DirectorMovies>
+       <DirectorWorks data={directorsData[0]}/>
+       <DirectorTimeLine data={directorsData[0]}/>
 
-       
        <SimpleSlider />
     </>
   );
