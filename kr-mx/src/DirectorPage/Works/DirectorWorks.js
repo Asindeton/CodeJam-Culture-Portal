@@ -22,9 +22,8 @@ function CustomToggle({children, eventKey}) {
 }
 
 export default function DirectorWorks(props) {
-
   const language = 'ru';
-  const data = props.data[language];
+  const data = props.data;
 
   let AccordionData = data.filmography.map((item, index) => {
     return (
@@ -40,7 +39,7 @@ export default function DirectorWorks(props) {
               {item.information.map((i, ind) => {
                 return (<div className='works__body-item'>
         <span className='works__body-item-title'>
-          {i.title}
+          {i.film[language]}
         </span>
                   <span className='works__body-item-year'>
            {i.year}

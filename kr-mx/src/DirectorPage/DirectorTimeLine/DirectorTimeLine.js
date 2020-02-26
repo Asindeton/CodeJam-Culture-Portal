@@ -3,10 +3,10 @@ import { Timeline, Event } from "react-timeline-scribble";
 
 export default function DirectorTimeLine(props) {
   const language = 'ru';
-  const data = props.data[language].biography;
+  const data = props.data.biography;
 
   let Events = data.map(item=>{
-    return <Event interval = {item.period}>{item.text}</Event>
+    return <Event interval = {item.years}>{item.do[language]}</Event>
   });
   return(
     <>

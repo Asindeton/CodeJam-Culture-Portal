@@ -2,7 +2,7 @@ import React from 'react';
 import DirectorActivityMap from "./DirectorPage/Map/DirectorActivityMap";
 import DirectorMovies from "./DirectorPage/Youtube/DirectorMovies";
 import DirectorWorks from "./DirectorPage/Works/DirectorWorks";
-import filmDirectorsData from "./MainPage/data";
+import directorsData from "./MainPage/directorsData";
 import DirectorTimeLine from "./DirectorPage/DirectorTimeLine/DirectorTimeLine";
 const mapsLocation = {
   'Всероссийский государственный институт кинематографии имени С. А. Герасимова': [55.77583, 37.63722],
@@ -15,8 +15,8 @@ function App() {
     <>
       <DirectorActivityMap data={{mapsLocation}}></DirectorActivityMap>
       <DirectorMovies></DirectorMovies>
-      <DirectorWorks data={filmDirectorsData.arsanskiy}/>
-      <DirectorTimeLine data={filmDirectorsData.arsanskiy}/>
+      <DirectorWorks data={directorsData[0]}/>
+      <DirectorTimeLine data={directorsData[0]}/>
       </>
       );
       }
