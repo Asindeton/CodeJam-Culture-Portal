@@ -1,0 +1,17 @@
+.about__video-container{
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  height: 525px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.about__video-button{
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-image: url("Polygon 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
