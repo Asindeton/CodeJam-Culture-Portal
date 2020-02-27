@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "gatsby"
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Container,
@@ -32,21 +31,21 @@ const Header = () => {
               id="basic-navbar-nav"
             >
               <Nav className="header__nav-primary nav-main">
-                <Link bsPrefix="nav-main__link" to="/ListOfAuthors/">
+                <Link className="nav-main__link" to="/ListOfAuthors/">
                   Movie Directors
                 </Link>
-                <Link bsPrefix="nav-main__link" to="/About/">
+                <Link className="nav-main__link" to="/About/">
                   About
                 </Link>
               </Nav>
               <Nav className="header__nav-second nav-second">
-                <Link bsPrefix="nav-second__link" to="/Developers/">
+                <Link className="nav-second__link" to="/Developers/">
                   Developers
                 </Link>
-                <Link bsPrefix="nav-second__link" to="/Styleguide/">
+                <Link className="nav-second__link" to="/Styleguide/">
                   Styleguide
                 </Link>
-                <Link bsPrefix="nav-second__link" to="/Worklog/">
+                <Link className="nav-second__link" to="/Worklog/">
                   Worklog
                 </Link>
                 <Nav.Link className="nav-second__link" href="#dropdowm">

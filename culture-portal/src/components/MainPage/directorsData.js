@@ -221,12 +221,12 @@ const directorsData = [
     ],
     "description": {
       "ru": "Белорусский советский режиссёр, сценарист",
-      "en": "Belarusian Soviet director, screenwrite",
+      "en": "Belarusian Soviet director, screenwriter",
       "be": "Беларускі савецкі рэжысёр, сцэнарыст"
     },
     "fullDescription": {
       "ru": "Белорусский советский режиссёр, сценарист",
-      "en": "Belarusian Soviet director, screenwrite",
+      "en": "Belarusian Soviet director, screenwriter",
       "be": "Беларускі савецкі рэжысёр, сцэнарыст"
     },
     "picture": "https://www.kino-teatr.ru/acter/photo/5/3/47035/391626.jpg",

@@ -1,11 +1,7 @@
 import React from "react";
+import "./DirectorDescription.scss";
 
 const languageData = {
-  "filmDirector":{
-    en: "Film Director",
-    ru: "Кинорежиссёр",
-    be: "Кінарэжысёр"
-  },
 
   "description": {
     en: "Description",
@@ -29,15 +25,19 @@ export default function DirectorData(props) {
   const data = props.data;
   const language = 'en';
   return (
-    <div>
-      <h2>{languageData.filmDirector[language]}</h2>
-      <p>{data.name[language]} &nbsp; {data.surname[language]}</p>
-      <img src={data.picture} alt='director-image'/>
-      <div>
-        <h4>{languageData.description[language]}</h4>
-        <p>{data.fullDescription[language]}</p>
-        <p>{languageData.yearsOfLife[language]} <span>{data.yearsOfLife}</span></p>
-        <p>{languageData.placeOfBirth[language]} <span>{data.placeOfBirth[language]}</span></p>
+    <div className="director__wrapper">
+      <p className="director__name-wrapper">
+        <span className="director__name">{data.name[language]}</span>
+        <span className="director__name">{data.surname[language]}</span>
+      </p>
+      <img className="director__photo" src={data.picture} alt='director-image'/>
+      <div className="director__description-wrapper">
+        <h4 className="director__description-title">{languageData.description[language]}</h4>
+        <p className="director__description">{data.fullDescription[language]}</p>
+        <p className="director__description-heading">{languageData.yearsOfLife[language]}
+          <span className="director__description-text">{data.yearsOfLife}</span></p>
+        <p className="director__description-heading">{languageData.placeOfBirth[language]}
+          <span className="director__description-text">{data.placeOfBirth[language]}</span></p>
       </div>
     </div>
   )

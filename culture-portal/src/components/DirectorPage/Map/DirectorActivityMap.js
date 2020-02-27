@@ -51,7 +51,7 @@ export default function DirectorActivityMap(props) {
    />
   });
   return (<YMaps>
-    <Map defaultState={{center: center, zoom: zoom}}>
+    <Map className="map__container" defaultState={{center: center, zoom: zoom}}>
       {placeMark}
     </Map>
   </YMaps>)

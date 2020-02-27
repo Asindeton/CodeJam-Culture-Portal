@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+.director__wrapper{
+  margin: 100px 0;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  display: grid;
+  grid-template-areas: "title photo description";
+}
+
+.director__name-wrapper{
+  grid-area: title;
+}
+.director__name{
+  display: flex;
+  padding: 5px 19px;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  width: min-content;
+}
+.director__photo{
+  grid-area: photo;
+  width: 254px;
+}
+.director__description-wrapper{
+  grid-area: description;
+}
+.director__description-title{
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.director__description{
+  font-size: 16px;
+  line-height: 22px;
+}
+.director__description-heading{
+  font-weight: bold;
+}
+.director__description-text{
+  font-weight: normal;
+}
+@media screen and (max-width: 744px){
+  .director__wrapper{
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .director__description-title{
+    margin: 24px 0;
+  }
+}
