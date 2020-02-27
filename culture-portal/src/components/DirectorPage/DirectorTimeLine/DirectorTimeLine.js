@@ -1,4 +1,5 @@
 import React from "react";
+import "./DirectorTimeLine.scss"
 import { Timeline, Event } from "react-timeline-scribble";
 
 export default function DirectorTimeLine(props) {

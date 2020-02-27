@@ -1,6 +1,6 @@
 import React from "react";
 import {YMaps, Map, Placemark} from 'react-yandex-maps';
-
+import "./DirectorActivityMap.scss";
 function getCenter(array) {
   let coordinatesObject = {
     minLatitude: array[0][0],

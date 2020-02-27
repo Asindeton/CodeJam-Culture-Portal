@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 
 import Gallery from 'react-grid-gallery';
-import './Gallery.css'
+import './Gallery.scss'
 import autor from '../../../images/assets/arshanskiy1.jpg'
 import autorTwo from '../../../images/assets/arshanskiy2.jpg'
 import autorThree from '../../../images/assets/arshanskiy3.jpg'

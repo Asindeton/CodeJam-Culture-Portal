@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 
 import Header from "./Header/Header"
 import Footer from '../pages/Footer'
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children, title }) => {
 
