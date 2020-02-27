@@ -14,7 +14,7 @@ const Footer = () => {
              <div className='block-footer'>
                  MENU
                 <ul>
-                   <li><Link to="/IndexPage/" className='link' >Main Home</Link></li>
+                   <li><Link to="/Main/" className='link' >Main Home</Link></li>
                    <li><Link to="/ListOfAuthors/" className='link' >Movie Directors</Link></li>
                    <li><Link to="/About/" className='link' >About</Link></li>
                 </ul>

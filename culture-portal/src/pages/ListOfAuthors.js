@@ -85,13 +85,11 @@ class ListOfAuthors extends Component {
     return (
       <Layout>
       <Fragment>
-      
         <SearchAuthors searchNameF={this.setSearchName} searchPlaceF={this.setSearchPlace} searchPlacePlaceholder = {searchPlacePlaceholder} searchNamePlaceholder = {searchNamePlaceholder}/>
         <div className='flexWrap'>
           {allAuthors}
         </div>
         <Link to="/">Go back to the homepage</Link>
-
       </Fragment>
       </Layout>
     )

@@ -11,7 +11,7 @@ import {
   DropdownButton,
   Dropdown
 } from "react-bootstrap";
-import "./header.css";
+import "./Header.css";
 import Logotype from "../../images/logo-big.png";
 
 const Header = () => {
@@ -32,23 +32,23 @@ const Header = () => {
               id="basic-navbar-nav"
             >
               <Nav className="header__nav-primary nav-main">
-                <Nav.Link bsPrefix="nav-main__link" href="#home">
+                <Link bsPrefix="nav-main__link" to="/ListOfAuthors/">
                   Movie Directors
-                </Nav.Link>
-                <Nav.Link bsPrefix="nav-main__link" href="#link">
+                </Link>
+                <Link bsPrefix="nav-main__link" to="/About/">
                   About
-                </Nav.Link>
+                </Link>
               </Nav>
               <Nav className="header__nav-second nav-second">
-                <Nav.Link bsPrefix="nav-second__link" href="#home">
+                <Link bsPrefix="nav-second__link" to="/Developers/">
                   Developers
-                </Nav.Link>
-                <Nav.Link bsPrefix="nav-second__link" href="#styleguide">
+                </Link>
+                <Link bsPrefix="nav-second__link" to="/Styleguide/">
                   Styleguide
-                </Nav.Link>
-                <Nav.Link bsPrefix="nav-second__link" href="#worklog">
+                </Link>
+                <Link bsPrefix="nav-second__link" to="/Worklog/">
                   Worklog
-                </Nav.Link>
+                </Link>
                 <Nav.Link className="nav-second__link" href="#dropdowm">
                   <DropdownButton
                     size="sm"

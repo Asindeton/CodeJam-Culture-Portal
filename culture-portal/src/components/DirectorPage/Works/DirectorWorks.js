@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import {Accordion, Card, useAccordionToggle} from "react-bootstrap";
 import minus from './images/minus.png';
 import plus from './images/plus.png';
-import LocalizedStrings from 'react-localization';
 
 function CustomToggle({children, eventKey}) {
   const [open, setOpen] = useState(false);
@@ -23,9 +22,8 @@ function CustomToggle({children, eventKey}) {
 }
 
 export default function DirectorWorks(props) {
-
   const language = 'ru';
-  const data = props.data[language];
+  const data = props.data;
 
   let AccordionData = data.filmography.map((item, index) => {
     return (
@@ -41,7 +39,7 @@ export default function DirectorWorks(props) {
               {item.information.map((i, ind) => {
                 return (<div className='works__body-item'>
         <span className='works__body-item-title'>
-          {i.title}
+          {i.film[language]}
         </span>
                   <span className='works__body-item-year'>
            {i.year}
