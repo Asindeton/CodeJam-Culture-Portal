@@ -17,9 +17,13 @@ const CardOfAuthor = ({imgName,name,years,description,detail}) => (
       <Card.Text className='text-muted'>
         {description}
       </Card.Text>
-  
 
   
+<<<<<<< HEAD
+
+  
+=======
+>>>>>>> 8d330d71e0cfb3eb44ccec23c7ae6541a5c576e9
       <Link to="/listOfAuthors/"  className='bottom'>{detail}</Link> 
   
   
