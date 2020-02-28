@@ -25,7 +25,7 @@ const App = () => {
         Developer</div>
       ) : (
         <a.div className="box" style={contentProps}>
-          <h3>Hey there ! React Spring is awesome.</h3>
+          <h4>Hey there ! React Spring is awesome.</h4>
         </a.div>
       )}
     </div>
