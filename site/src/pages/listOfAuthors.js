@@ -1,0 +1,140 @@
+import React, { Component, Fragment, useContext } from 'react';
+import { Link } from "gatsby"
+import CardOfAuthor from '../components/cardOfAuthor';
+import SearchAuthors from '../components/searchAuthors';
+
+import DataForList from "../components/prepareDataForList"
+
+import Layout from "../components/layout"
+//import Image from "../components/image"
+import SEO from "../components/seo"
+
+import {GlobalStateContext} from "../context/GlobalContextProvider" 
+
+import {allAuthors as translate}  from "../data/dictionary"
+
+import './listOfAuthors.css';
+
+let currLang = "be";
+
+//const state = useContext(GlobalStateContext);
+
+
+let detail;
+let searchNamePlaceholder;
+let searchPlacePlaceholder;
+
+
+const ListOfAuthors = () => {
+  
+  const state = useContext(GlobalStateContext);
+
+//  console.log("searchName " + state.searchName)
+//  console.log("searchPlace " + state.searchPlace)
+  
+  currLang = state.language; 
+  
+  detail = translate.detail[currLang];
+  searchNamePlaceholder = translate.searchNamePlaceholder[currLang];
+  searchPlacePlaceholder = translate.searchPlacePlaceholder[currLang];
+  
+  
+  
+  
+      const search = () => {
+      
+      let DataForListSearchName = (state.searchName.length === 0)? DataForList: DataForList.filter((item) => {
+        return item.fullName[currLang].toLowerCase().indexOf(state.searchName) > -1;
+      });
+      
+      let DataForListSearchPlace = (state.searchPlace.length === 0)? DataForListSearchName: DataForListSearchName.filter((item) => {
+        return item.place[currLang].toLowerCase().indexOf(state.searchPlace) > -1;
+      });
+
+      return DataForListSearchPlace;
+    };  
+  
+  const allAuthors=search().map((item,ind) => {
+    return (
+      <CardOfAuthor imgName={item.img} name={item.fullName[currLang]} years={item.yearsOfLife} description={item.smallDescription[currLang]} key={ind} detail={detail} link={ind}/>
+      )
+    }) 
+  
+
+
+    return (
+      
+      
+    <Layout>
+      
+      <SEO title="All authors" />
+        <SearchAuthors searchPlacePlaceholder = {searchPlacePlaceholder} searchNamePlaceholder = {searchNamePlaceholder}/> 
+        <div className='flexWrap'>          
+          {allAuthors}
+        </div>
+      
+    </Layout>
+
+  )
+  
+}
+
+    
+//    super(props);
+//    this.state={
+//      searchName: '',
+//      searchPlace: '',
+//    };
+
+    
+//    currLang = 'be'; 
+    
+
+    
+
+    
+//    this.setSearchName = (name) => {
+//      this.setState((state) => {
+//        return {
+//          searchName: name.toLowerCase(),
+//        };
+//      })
+//    }; 
+//    this.setSearchPlace = (place) => {
+//      this.setState((state) => {
+//        return {
+//          searchPlace: place.toLowerCase(),
+//        };
+//      })
+//    };
+    
+  
+    
+//  }  
+//  render() {    
+//    const allAuthors = search().map((item,ind) => {
+//    return (
+//      <CardOfAuthor imgName={item.img} name={item.fullName[currLang]} years={item.yearsOfLife} description={item.smallDescription[currLang]} key={ind} detail={detail} link={ind}/>
+//      )
+//    }) 
+//    return (
+//      
+//      
+//    <Layout>
+//      
+//      <SEO title="All authors" />
+//        <SearchAuthors searchPlacePlaceholder = {searchPlacePlaceholder} searchNamePlaceholder = {searchNamePlaceholder}/> 
+//        <div className='flexWrap'>          
+//          {allAuthors}
+//        </div>
+//      
+//    </Layout>
+//
+//      
+//    )
+//  }  
+//}
+
+
+
+export default ListOfAuthors
