@@ -1,8 +1,12 @@
 import React, {useState} from "react";
 import {Accordion, Card, useAccordionToggle} from "react-bootstrap";
-import minus from './images/minus.png';
-import plus from './images/plus.png';
-
+import "./DirectorWorks.scss";
+const languageData={
+  "title":
+    {en:"Works",
+    ru:"Фильмы",
+    be:"Фільмы"}
+};
 function CustomToggle({children, eventKey}) {
   const [open, setOpen] = useState(false);
   const decoratedOnClick = useAccordionToggle(eventKey, () =>
@@ -14,7 +18,12 @@ function CustomToggle({children, eventKey}) {
       <div className='works__button'
            onClick={decoratedOnClick}
       >
-        {(open) ? <img src={minus} alt='minus'/> : <img src={plus} alt='plus'/>}
+        {(open) ?
+          <img src="https://obhajiwala.com/assets/less/icons/ionicons/src/ios7-minus-empty.svg"
+               style={{width:"32px", height:"32px"}} />:
+          <img src='https://obhajiwala.com/assets/less/icons/ionicons/src/ios7-plus-empty.svg'
+               style={{width:"32px", height:"32px"}}/>
+          }
       </div>
       <span className='works__period'>{children}</span>
     </>
@@ -55,7 +64,7 @@ export default function DirectorWorks(props) {
   });
 
   return (<>
-    <h2 className='works__title'>Works</h2>
+    <h2 className='works__title'>{languageData.title[language]}</h2>
     <>
       {AccordionData}
     </>

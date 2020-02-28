@@ -4,7 +4,7 @@ import CardOfAuthor from '../components/cardOfAuthor';
 import SearchAuthors from '../components/searchAuthors';
 import DataForList from "../components/data/prepareDataForList"
 import Layout from '../components/layout';
-
+import "./loa.scss";
 let lang = "be";
 let detail;
 let searchNamePlaceholder;

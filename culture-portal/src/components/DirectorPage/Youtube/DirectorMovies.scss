@@ -1,17 +1,30 @@
 .about__video-container{
   display: flex;
   align-items: center;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   height: 525px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  margin: 0 auto;
 }
 .about__video-button{
   margin: 0 auto;
-  width: 300px;
-  height: 300px;
-  background-image: url("Polygon 1.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid white;
+  border-bottom: 50px solid transparent;
+  &:hover{
+     border-left: 100px solid #818A91;
+   }
+  &:active{
+    border-left: 100px solid white;
+  }
+}
+@media screen and (max-width: 744px){
+  .about__video-container{
+    height: 400px;
+  }
 }

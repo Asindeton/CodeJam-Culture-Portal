@@ -1,6 +1,6 @@
 import React from "react";
 import {YMaps, Map, Placemark} from 'react-yandex-maps';
-
+import "./DirectorActivityMap.scss";
 function getCenter(array) {
   let coordinatesObject = {
     minLatitude: array[0][0],
@@ -51,7 +51,7 @@ export default function DirectorActivityMap(props) {
    />
   });
   return (<YMaps>
-    <Map defaultState={{center: center, zoom: zoom}}>
+    <Map className="map__container" defaultState={{center: center, zoom: zoom}}>
       {placeMark}
     </Map>
   </YMaps>)

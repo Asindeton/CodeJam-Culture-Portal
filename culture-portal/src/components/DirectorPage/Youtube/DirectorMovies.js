@@ -1,6 +1,6 @@
 import React from "react";
 import ModalVideo from "react-modal-video";
-
+import "./DirectorMovies.scss";
 export default class DirectorMovies extends React.Component{
   constructor (props) {
     super(props);

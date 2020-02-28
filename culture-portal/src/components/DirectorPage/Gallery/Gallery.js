@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 
 import Gallery from 'react-grid-gallery';
-import './Gallery.css'
+import './Gallery.scss'
 import autor from '../../../images/assets/arshanskiy1.jpg'
 import autorTwo from '../../../images/assets/arshanskiy2.jpg'
 import autorThree from '../../../images/assets/arshanskiy3.jpg'
@@ -35,7 +35,14 @@ import maruhinOne from '../../../images/assets/maruhin.jpg'
 import maruhinTwo from '../../../images/assets/maruhin2.jpg'
 import maruhinThree from '../../../images/assets/maruhin3.jpg'
 import maruhinFour from '../../../images/assets/maruhin4.jpg'
-
+const languageData = {
+   "title":{
+      en:"Photo gallery",
+      ru:"Фотогалерия",
+      be:"Фотагалерыя"
+   }
+};
+const language = "ru";
 class SimpleSlider extends React.Component {
       constructor(props) {
          super(props)
@@ -62,16 +69,12 @@ class SimpleSlider extends React.Component {
             const IMAGES = [{
                   src: [this.state.imageOne],
                   thumbnail: [this.state.imageOne],
-                  thumbnailWidth: 460,
-                  thumbnailHeight: 262,
                   isSelected: true,
                   caption: "After Rain (Jeshu John - designerspics.com)"
                },
                {
                   src: [this.state.imageTwo],
                   thumbnail: [this.state.imageTwo],
-                  thumbnailWidth: 420,
-                  thumbnailHeight: 262,
                   tags: [{
                      value: "Ocean",
                      title: "Ocean"
@@ -85,8 +88,6 @@ class SimpleSlider extends React.Component {
                {
                   src: [this.state.imageThree],
                   thumbnail: [this.state.imageThree],
-                  thumbnailWidth: 420,
-                  thumbnailHeight: 262,
                   tags: [{
                      value: "Ocean",
                      title: "Ocean"
@@ -167,15 +168,8 @@ class SimpleSlider extends React.Component {
             ]
       return (
          <div className = 'slider' >
-         <ul>
-         {Autors.map((newList)=>(
-            <li
-            className='img-list'
-            onClick={()=>{this.changeValue(newList.name, newList.imageOne, newList.imageTwo, newList.imageThree)}}
-            > {newList.name}</li>
-         ))}
-         </ul>
-            <h3> {this.state.name} </h3>
+
+            <h3 className="gallery__title"> {languageData.title[language]} </h3>
             <Gallery className='slider-img' infinity={true} images={ IMAGES } />
          </div>
       )
@@ -183,3 +177,14 @@ class SimpleSlider extends React.Component {
 }
 
 export default SimpleSlider
+
+/*
+ <ul>
+         {Autors.map((newList)=>(
+            <li
+            className='img-list'
+            onClick={()=>{this.changeValue(newList.name, newList.imageOne, newList.imageTwo, newList.imageThree)}}
+            > {newList.name}</li>
+         ))}
+         </ul>
+*/

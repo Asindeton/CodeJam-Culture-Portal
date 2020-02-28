@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 .css-o1utbh {
   max-width: 390px;
+  margin: 0 auto;
 }
 
 label.css-vcfpfv {
@@ -14,4 +16,14 @@ label.css-vcfpfv {
 p.css-692fgp{
   border-radius: 5px;
   height: 31px;
+}
+.timeline__title{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
 }
