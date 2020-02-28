@@ -1,0 +1,63 @@
+.worklogButton{
+   width: 80%;
+   height: 40px;
+   background-color: black;
+   color: white;
+}
+.worklogButton:hover{
+   background-color: white;
+   color: black;
+}
+
+.table {
+   width: 80%;
+   height: 100%;
+   margin:0;
+}
+
+.toggle{
+   width: 80%;
+   margin-left: 17.5%;
+   margin-right: 17.5%;
+   margin-top: 4%;
+   margin-bottom: 4%;
+}
+
+th{
+   background-color: black;
+   color:white;
+}
+
+th,td {
+   text-align: center;
+}
+
+@media (max-width: 620px){
+   .worklogButton,table{
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 500px){
+   table{
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 460px){
+   .worklogButton,table{
+      font-size: 10px;
+   }
+}
+
+@media (max-width: 360px){
+   table{
+      font-size: 8px;
+   }
+}
+
+@media (max-width: 330px){
+   table{
+      font-size: 7px;
+   }
+}
