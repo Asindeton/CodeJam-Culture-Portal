@@ -5,6 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './Footer.css'
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import logo from '../../images/logo-big.png'
+import mail from '../../images/mail.svg'
+import book from '../../images/book.svg'
+import law from '../../images/law.svg'
+import paper from '../../images/paper-plane.svg'
 import ScrollUpButton from "react-scroll-up-button"
 
 const Footer = () => {
@@ -16,7 +20,7 @@ const Footer = () => {
              <img src={logo} className='logo'/>
           </MDBCol>
           <MDBCol md="2">
-            <h5 className="title">MENU</h5>
+            <h5 className="title">MENU<img src={book} /></h5>
                  <ul>
                      <li><Link to="/Main/" className='list-unstyled' >Main Home</Link></li>
                      <li><Link to="/ListOfAuthors/" className='list-unstyled' >Movie Directors</Link></li>
@@ -24,7 +28,7 @@ const Footer = () => {
                  </ul>
           </MDBCol>
           <MDBCol md="2">
-            <h5 className="title">SUPPORT</h5>
+            <h5 className="title">SUPPORT<img src={mail} /></h5>
             <ul>
                 <li><Link to="/Developers/" className='list-unstyled' >Developers</Link></li>
                 <li><Link to="/Worklog/" className='list-unstyled' >Worklog</Link></li>
@@ -32,7 +36,7 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <MDBCol md="2">
-            <h5 className="title">BY RSSCHOOL</h5>
+            <h5 className="title">BY RSSCHOOL<img src={law} /></h5>
             <ul>
                 <li><a href="https://github.com/Asindeton" className='list-unstyled' >Dmitry Legankov</a></li>
                 <li><a href="https://github.com/shebekocom" className='list-unstyled' >Nikolay Shebeko</a></li>
@@ -43,7 +47,7 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <MDBCol md="2">
-                <h5 className="title">CONTACTS</h5>
+                <h5 className="title">CONTACTS<img src={paper} /></h5>
                 <button className='footer-button'>Feedback on Rsschool</button>
                 <button className='footer-button'>Submit bag</button>
           </MDBCol>

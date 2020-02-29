@@ -40,13 +40,13 @@ const Header = () => {
               </Nav>
               <Nav className="header__nav-second nav-second">
                 <Link className="nav-second__link" to="/Developers/">
-                  Developers
+                  Developers |
                 </Link>
                 <Link className="nav-second__link" to="/Styleguide/">
-                  Styleguide
+                  Styleguide |
                 </Link>
                 <Link className="nav-second__link" to="/Worklog/">
-                  Worklog
+                  Worklog |
                 </Link>
                 <Nav.Link className="nav-second__link" href="#dropdowm">
                   <DropdownButton
