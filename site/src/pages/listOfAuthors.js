@@ -6,7 +6,7 @@ import SearchAuthors from '../components/searchAuthors';
 import DataForList from "../components/prepareDataForList"
 
 import Layout from "../components/layout"
-//import Image from "../components/image"
+
 import SEO from "../components/seo"
 
 import {GlobalStateContext} from "../context/GlobalContextProvider" 
@@ -29,8 +29,6 @@ const ListOfAuthors = () => {
   
   const state = useContext(GlobalStateContext);
 
-//  console.log("searchName " + state.searchName)
-//  console.log("searchPlace " + state.searchPlace)
   
   currLang = state.language; 
   
@@ -79,61 +77,7 @@ const ListOfAuthors = () => {
   
 }
 
-    
-//    super(props);
-//    this.state={
-//      searchName: '',
-//      searchPlace: '',
-//    };
-
-    
-//    currLang = 'be'; 
-    
-
-    
-
-    
-//    this.setSearchName = (name) => {
-//      this.setState((state) => {
-//        return {
-//          searchName: name.toLowerCase(),
-//        };
-//      })
-//    }; 
-//    this.setSearchPlace = (place) => {
-//      this.setState((state) => {
-//        return {
-//          searchPlace: place.toLowerCase(),
-//        };
-//      })
-//    };
-    
-  
-    
-//  }  
-//  render() {    
-//    const allAuthors = search().map((item,ind) => {
-//    return (
-//      <CardOfAuthor imgName={item.img} name={item.fullName[currLang]} years={item.yearsOfLife} description={item.smallDescription[currLang]} key={ind} detail={detail} link={ind}/>
-//      )
-//    }) 
-//    return (
-//      
-//      
-//    <Layout>
-//      
-//      <SEO title="All authors" />
-//        <SearchAuthors searchPlacePlaceholder = {searchPlacePlaceholder} searchNamePlaceholder = {searchNamePlaceholder}/> 
-//        <div className='flexWrap'>          
-//          {allAuthors}
-//        </div>
-//      
-//    </Layout>
-//
-//      
-//    )
-//  }  
-//}
+ 
 
 
 
