@@ -41,18 +41,18 @@ const Styleguide = () => {
           <Container>
             <Row>
               <Col>
-                <h1>H1.Heading</h1>
-                <h2>H2.Heading</h2>
-                <h3>H3.Heading</h3>
-                <p>
+                <h1 className="h1-heading">H1.Heading</h1>
+                <h2 className="h2-heading">H2.Heading</h2>
+                <h3 className="h3-heading">H3.Heading</h3>
+                <p  className="text-primary">
                   Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing
                   elit.
                 </p>
               </Col>
               <Col>
-                <p>Display 1</p>
-                <p>Display 2</p>
-                <p>Display 3</p>
+                <p className="display-1">Display 1</p>
+                <p className="display-2">Display 2</p>
+                <p className="display-3">Display 3</p>
               </Col>
             </Row>
           </Container>
