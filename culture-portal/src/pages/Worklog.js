@@ -119,7 +119,7 @@ class ToggleThree extends Component {
        </button>
        {show &&  <table className='table' responsive>
           <tr>
-            <th> Main difficulties for the team during implementation </th>
+            <th> </th>
           </tr>
           <tr>
             <td>Using Gatsby</td>

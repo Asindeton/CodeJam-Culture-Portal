@@ -1,144 +1,127 @@
-%text-font {
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  word-wrap: break-word;
+.home__project-description-first-part, .home__project-description-second-part-wrapper, .home__project-description-third-part-wrapper, .home__project-description-button {
+	 font-family: Source Sans Pro;
+	 font-style: normal;
+	 font-weight: normal;
+	 font-size: 16px;
+	 line-height: 22px;
+	 word-wrap: break-word;
+}
+ .home__project-description-first-part::after, .home__project-description-second-part-wrapper:after {
+	 content: '';
+	 padding-top: 25%;
+	 border-right: solid 1px black;
+	 border-bottom: 1px black solid;
+	 display: flex;
+	 margin-top: 48px;
+	 max-width: 50%;
+	 justify-self: start;
+	 padding-left: 12.5%;
+}
+ @font-face {
+	 font-family: 'Gotham Pro';
+	 src: url('../fonts/GothamPro.woff') format('woff');
+	 font-weight: normal;
+	 font-style: normal;
+}
+ @font-face {
+	 font-family: 'Gotham Pro';
+	 src: url('../fonts/GothamPro-Bold.woff') format('woff');
+	 font-weight: bold;
+	 font-style: normal;
+}
+ @font-face {
+	 font-family: 'Source Sans Pro';
+	 src: url('../fonts/SourceSansPro-SemiBold.woff') format('woff');
+	 font-weight: 600;
+	 font-style: normal;
+}
+ @font-face {
+	 font-family: 'Source Sans Pro';
+	 src: url('../fonts/SourceSansPro-Regular.woff') format('woff');
+	 font-weight: normal;
+	 font-style: normal;
+}
+ .home__project-description-wrapper {
+	 height: 100vh;
+	 margin: 0 68px;
+}
+ .home__project-description-container {
+	 margin: 0 auto;
+	 margin-top: 150px;
+	 max-width: 1000px;
+	 display: flex;
+	 flex-direction: column;
+}
+ .home__project-description-title-wrapper {
+	 display: flex;
+	 flex-direction: row;
+}
+ .home__project-description-title {
+	 width: 50%;
+	 display: flex;
+	 flex-direction: row;
+	 font-family: Source Sans Pro;
+	 font-style: normal;
+	 font-weight: 600;
+	 font-size: 18px;
+	 line-height: 23px;
+	 text-decoration-line: underline;
+	 text-transform: uppercase;
+}
+ .home__project-description-title::after {
+	 content: '';
+	 height: 1px;
+	 display: flex;
+	 justify-self: center;
+	 width: 33%;
+	 background: black;
+	 margin: 12px 48px;
+}
+ .home__project-description-first-part {
+	 width: 50%;
+	 height: max-content;
+}
+ .home__project-description-second-part-wrapper {
+	 margin-top: -30px;
+	 width: 50%;
+}
+ .home__project-description-second-part-intro {
+	 font-size: 18px;
+}
+ .home__project-description-second-part-list {
+	 list-style-type: none;
+	 padding-left: 0;
+	 margin-right: 2px;
+}
+ .home__project-description-second-part-wrapper:after {
+	 border-left: solid 1px black;
+	 border-right: none;
+	 margin: 48px auto 0 auto;
+	 padding-right: 12.5%;
+}
+ .home__project-description-third-part-wrapper {
+	 display: flex;
+	 justify-content: flex-end;
+}
+ .home__project-description-third-part {
+	 width: 50%;
+	 height: max-content;
+	 margin-top: -15px;
+	 margin-bottom: 20%;
+}
+ .home__project-description-button {
+     color: white;
+	 padding: 0.5rem;
+	 align-self: flex-end;
+     background-color: black;
 }
 
-%pointer {
-  content: '';
-  padding-top: 25%;
-  border-right: solid 1px black;
-  border-bottom: 1px black solid;
-  display: flex;
-  margin-top: 48px;
-  max-width: 50%;
-  justify-self: start;
-  padding-left: 12.5%;
-}
 
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro.woff') format('woff');
 
-  font-weight: normal;
-  font-style: normal;
-}
+ .home__project-description-button:hover {
+   color: white;
+   background-color: #363636;
+   transition: 1s;
+   text-decoration: none;
 
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('../fonts/GothamPro-Bold.woff') format('woff');
-
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('../fonts/SourceSansPro-SemiBold.woff') format('woff');
-
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('../fonts/SourceSansPro-Regular.woff') format('woff');
-
-  font-weight: normal;
-  font-style: normal;
-}
-
-.home__project-description-wrapper {
-  height: 100vh;
-  margin:0 68px;
-}
-
-.home__project-description-container {
-  margin: 0 auto;
-  margin-top: 150px;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-}
-
-.home__project-description-title-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.home__project-description-title {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 23px;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-}
-
-.home__project-description-title::after {
-  content: '';
-  height: 1px;
-  display: flex;
-  justify-self: center;
-  width: 33%;
-  background: black;
-  margin: 12px 48px;
-}
-
-.home__project-description-first-part {
-  width: 50%;
-  height: max-content;
-  @extend %text-font
-}
-
-.home__project-description-first-part::after {
-  @extend %pointer
-}
-
-.home__project-description-second-part-wrapper {
-  margin-top: -30px;
-  width: 50%;
-  @extend %text-font;
-}
-
-.home__project-description-second-part-intro {
-  font-size: 18px;
-}
-
-.home__project-description-second-part-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin-right: 2px;
-}
-
-.home__project-description-second-part-wrapper:after {
-  @extend %pointer;
-  border-left: solid 1px black;
-  border-right: none;
-  margin: 48px auto 0 auto;
-  padding-right: 12.5%;
-}
-.home__project-description-third-part-wrapper{
-  @extend %text-font;
-  display: flex;
-  justify-content: flex-end;
-}
-.home__project-description-third-part {
-  width: 50%;
-  height: max-content;
-  margin-top: -15px;
-margin-bottom: 20%;
-}
-
-.home__project-description-button {
-  @extend %text-font;
-  width: max-content;
-  align-self: flex-end;
 }

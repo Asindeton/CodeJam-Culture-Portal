@@ -2,15 +2,17 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from "react-bootstrap/Button";
-import directorsData from '../directorsData'
+import directorsData from "../directorsData"
+import { Link } from "gatsby"
 
-function getDirectorOfDay(data){
-  let currentDay = new Date(Date.now()).getDate();
-  while(currentDay>data.length){
-    currentDay -= data.length
-  }
-   return data[currentDay-1];
+import "./HomeDirectorData.scss";
+
+function getDirectorOfDay(data, random){
+//  let currentDay = new Date(Date.now()).getDate();
+//  while(currentDay>data.length){
+//    currentDay -= data.length
+//  }
+   return data[random];
 }
 const languageData = {
   "title":{
@@ -41,9 +43,11 @@ const languageData = {
 };
 export default function HomeDirectorData(props) {
   const data = directorsData;
+  const random = props.random;
   const language = props.language;
-  let directorOfDay = getDirectorOfDay(data);
-  console.log(directorOfDay.filmography[0].information[0].year);
+
+  let directorOfDay = getDirectorOfDay(data, random);
+
   return (
     <div className="home__director-data-wrapper">
       <Container className="home__director-data-container">
@@ -67,7 +71,9 @@ export default function HomeDirectorData(props) {
             </Row>
             <Row>
               <Col >
-                <Button variant="dark" className="home__director-data-button">{languageData.button[language]}</Button>
+
+              <Link to={'/author' + (random+1)}  className="home__director-data-button">{languageData.button[language]}</Link>
+
               </Col>
             </Row>
             <Row>

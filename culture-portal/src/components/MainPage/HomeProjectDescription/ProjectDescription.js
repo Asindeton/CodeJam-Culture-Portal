@@ -1,8 +1,11 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
+import { Link } from "gatsby"
+
+import "./ProjectDescription.scss";
+
 
 export default function ProjectDescription(props) {
-  const {language} = 'en';
+  const {language} = props;
   const languageData = {
     "title":{
       en:"Film directors of Belarus",
@@ -77,7 +80,7 @@ export default function ProjectDescription(props) {
       be:"Глядзець усіх рэжысерау",
     }
   };
-  let thirdPart = languageData.thirdPart.en.map((item,index)=>{return <li>{languageData.thirdPart[language][index]}</li>});
+  let thirdPart = languageData.thirdPart.en.map((item,index)=>{return <li key={index}>{languageData.thirdPart[language][index]}</li>});
   return (
     <div className="home__project-description-wrapper">
       <div className="home__project-description-container">
@@ -100,7 +103,12 @@ export default function ProjectDescription(props) {
             {languageData.fourthPart[language]}
           </p>
         </div>
-        <Button className="home__project-description-button" variant="dark">{languageData.button[language]} &#8594;</Button>
+
+
+
+          <Link to={'/listOfAuthors'} className="home__project-description-button">{languageData.button[language]}</Link>
+
+
       </div>
     </div>
   )
