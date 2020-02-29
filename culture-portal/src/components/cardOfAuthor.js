@@ -4,7 +4,7 @@ import Image from "./image"
 
 import Card from 'react-bootstrap/Card';
 
-const CardOfAuthor = ({imgName,name,years,description,detail}) => (
+const CardOfAuthor = ({imgName,name,years,description,detail,link}) => (
   <Card bg="light" style={{ width: '16rem' }}>
       <div style={{ maxWidth: `16rem`, marginBottom: `1.45rem` }}>
         <Image imgName={imgName}/>
@@ -18,8 +18,8 @@ const CardOfAuthor = ({imgName,name,years,description,detail}) => (
         {description}
       </Card.Text>
 
+      <Link to={'/Author' + (link+1)}  className='bottom'>{detail}</Link>
 
-      <Link to="/listOfAuthors/"  className='bottom'>{detail}</Link>
 
 
     </Card.Body>

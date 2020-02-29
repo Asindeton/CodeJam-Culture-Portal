@@ -1,3 +1,23 @@
+export const description = {
+   worklog: {
+      team:{
+         en:'',
+         ru:'',
+         be:''
+      },
+      task:{
+         en:'',
+         ru:'',
+         be:''
+      },
+      difficulties:{
+         en:'',
+         ru:'',
+         be:''
+      }
+   }
+}
+
 const worklogData = [{
    task: '18.02.20',
    name: 'Dmitry Legankov',

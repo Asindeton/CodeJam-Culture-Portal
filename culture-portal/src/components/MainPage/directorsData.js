@@ -58,6 +58,7 @@ const directorsData = [
           "be": "Рэжысёр у тэатры"
         }
       },
+
       {
         "years": "1931-1941",
         "do": {
@@ -262,6 +263,9 @@ const directorsData = [
       "be": "Беларускі савецкі рэжысёр, сцэнарыст"
     },
     "picture": "https://www.kino-teatr.ru/acter/photo/5/3/47035/391626.jpg",
+    "gallery": [autor],
+    "galleryTwo": [autorTwo],
+    "galleryThree": [autorThree],
     "yearsOfLife": "25.08.1899 - 06.07.1974",
     "placeOfBirth": {
       "ru": "Невель",
@@ -497,6 +501,9 @@ const directorsData = [
       "be": "Савецкі і беларускі мастак-мультыплікатар, сцэнарыст, рэжысёр"
     },
     "picture": "https://flibusta.site/ia/53/415253/oleg_belousov.jpg",
+    "gallery": [belousovOne],
+    "galleryTwo": [belousovTwo],
+    "galleryThree": [belousovThree],
     "yearsOfLife": "16.11.1945 - 26.03.2009",
     "placeOfBirth": {
       "ru": "Слуцк",
@@ -785,6 +792,9 @@ const directorsData = [
       "be": "Савецкі кінааператар і рэжысёр, мастак, кінадакументаліст. Заслужаны дзеяч мастацтваў БССР (1967)"
     },
     "picture": "https://upload.wikimedia.org/wikipedia/ru/6/64/Moisey_Zalmanovich_Berov.jpg",
+    "gallery": [zalmanovichOne],
+    "galleryTwo": [zalmanovichOne],
+    "galleryThree": [zalmanovichOne],
     "yearsOfLife": "10.12.1909 - 2003",
     "placeOfBirth": {
       "ru": "Велиж",
@@ -1492,6 +1502,9 @@ const directorsData = [
       "be": "Савецкі кінааператар і рэжысёр дакументальнага кіно. Народны артыст БССР (1973). Лаўрэат Сталінскай прэміі другой ступені (1943). Член ВКП (б) з 1942 году"
     },
     "picture": "https://i.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxRjlKHB3ejhaL-7yDrgUCcjw",
+    "gallery": [veinerovichOne],
+    "galleryTwo": [veinerovichTwo],
+    "galleryThree": [veinerovichThree],
     "yearsOfLife": "24.12.1909 - 29.08.1998",
     "placeOfBirth": {
       "ru": "Минск",
@@ -1698,6 +1711,9 @@ const directorsData = [
       "be": "Савецкі кінааператар і рэжысёр"
     },
     "picture": "https://www.kino-teatr.ru/acter/album/25515/10383.jpg",
+    "gallery": [ginzburgOne],
+    "galleryTwo": [ginzburgTwo],
+    "galleryThree": [ginzburgThree],
     "yearsOfLife": "01.03.1907 - 10.03.1972",
     "placeOfBirth": {
       "ru": "Рогачёв",
@@ -2042,6 +2058,9 @@ const directorsData = [
       "be": "Савецкі і беларускі кінарэжысёр, сцэнарыст. Народны артыст БССР (1964)"
     },
     "picture": "https://www.kino-teatr.ru/acter/foto/sov/30853.jpg",
+    "gallery": [golubOne],
+    "galleryTwo": [golubTwo],
+    "galleryThree": [golubThree],
     "yearsOfLife": "29.09.1904 - 26.05.1994",
     "placeOfBirth": {
       "ru": "Днепр",
@@ -2280,6 +2299,9 @@ const directorsData = [
       "be": "Савецкі і беларускі кінарэжысёр, сцэнарыст і драматург. Заслужаны дзеяч мастацтваў Беларускай ССР (1981). Лаўрэат Дзяржаўнай прэміі Беларускай ССР (1966)"
     },
     "picture": "https://upload.wikimedia.org/wikipedia/ru/5/51/Alexander_Zakharovich_Gutkovich.jpg",
+    "gallery": [gutkovichOne],
+    "galleryTwo": [gutkovichTwo],
+    "galleryThree": [gutkovichThree],
     "yearsOfLife": "20.12.1920 - 19.09.1989",
     "placeOfBirth": {
       "ru": "Аскеры",
@@ -2658,6 +2680,9 @@ const directorsData = [
       "be": "Савецкі беларускі кінарэжысёр-дакументаліст. Лаўрэат Дзяржаўнай прэміі СССР (1985), Заслужаны дзеяч мастацтваў Беларускай ССР (1977), Народны артыст Беларускай ССР (1989). Член КПСС з 1976 года"
     },
     "picture": "https://www.kino-teatr.ru/acter/foto/sov/254684.jpg",
+    "gallery": [dashukOne],
+    "galleryTwo": [dashukTwo],
+    "galleryThree": [dashukThree],
     "yearsOfLife": "16.09.1938",
     "placeOfBirth": {
       "ru": "Валоки",
@@ -3038,6 +3063,9 @@ const directorsData = [
       "be": "Беларускі савецкі кінарэжысёр, акцёр кіно. Народны артыст СССР (1969). Лаўрэат Сталінскай прэміі (1950). Адзін з заснавальнікаў беларускага кіно"
     },
     "picture": "https://upload.wikimedia.org/wikipedia/commons/2/23/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87_%D0%9A%D0%BE%D1%80%D1%88-%D0%A1%D0%B0%D0%B1%D0%BB%D0%B8%D0%BD.gif",
+    "gallery": [korshOne],
+    "galleryTwo": [korshTwo],
+    "galleryThree": [korshThree],
     "yearsOfLife": "29.03.1900 — 06.07.1974",
     "placeOfBirth": {
       "ru": "Москва",
@@ -3467,7 +3495,10 @@ const directorsData = [
       "en": "Belarusian and Soviet film director",
       "be": "Беларускі і савецкі кінарэжысёр"
     },
-    "picture": "https://yt3.ggpht.com/a/AGF-l79gh-zsahfnOWMVkxBCG3I1lxq8m3W0SYMe9A=s900-c-k-c0xffffffff-no-rj-mo",
+    "picture": [hashchevatskiThree],
+    "gallery": [hashchevatskiOne],
+    "galleryTwo": [hashchevatskiTwo],
+    "galleryThree": [hashchevatskiThree],
     "yearsOfLife": "18.10.1947",
     "placeOfBirth": {
       "ru": "Одесса",
@@ -3768,6 +3799,9 @@ const directorsData = [
       "be": "Савецкі і беларускі кінарэжысёр, сцэнарыст, аператар. Заслужаны дзеяч мастацтваў Беларускай ССР (1974). Сцэнары пісаў у асноўным да сваіх дакументальных фільмаў. Член КПСС з 1974 года"
     },
     "picture": "https://www.sb.by/upload/resize_cache/slam.image/iblock/578/855_2000_1/578d00cbe0034068bf4726daf25048d0.jpg",
+    "gallery": [maruhinOne],
+    "galleryTwo": [maruhinTwo],
+    "galleryThree": [maruhinThree],
     "yearsOfLife": "13.07.1938 - 20.12.2001",
     "placeOfBirth": {
       "ru": "Фёдоровка",

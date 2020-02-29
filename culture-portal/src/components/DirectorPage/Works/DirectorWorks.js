@@ -1,12 +1,11 @@
-import React, {useState} from "react";
+import React,{useState, useContext} from "react";
+
 import {Accordion, Card, useAccordionToggle} from "react-bootstrap";
 import "./DirectorWorks.scss";
-const languageData={
-  "title":
-    {en:"Works",
-    ru:"Фильмы",
-    be:"Фільмы"}
-};
+
+import {authorData as translate} from "../../data/dictionary"
+import {GlobalStateContext} from '../../context/GlobalContextProvider'
+
 function CustomToggle({children, eventKey}) {
   const [open, setOpen] = useState(false);
   const decoratedOnClick = useAccordionToggle(eventKey, () =>
@@ -30,9 +29,17 @@ function CustomToggle({children, eventKey}) {
   );
 }
 
+
+let film;
+let currLang;
+
 export default function DirectorWorks(props) {
-  const language = 'ru';
-  const data = props.data;
+   const state = useContext(GlobalStateContext);
+   const data = props.data;
+   let language = state.language;
+   currLang = state.language;
+
+   film = translate.film[currLang]
 
   let AccordionData = data.filmography.map((item, index) => {
     return (
@@ -64,7 +71,7 @@ export default function DirectorWorks(props) {
   });
 
   return (<>
-    <h2 className='works__title'>{languageData.title[language]}</h2>
+    <h2 className='works__title'>{film}</h2>
     <>
       {AccordionData}
     </>
