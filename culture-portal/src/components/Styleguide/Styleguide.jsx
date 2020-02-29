@@ -19,25 +19,25 @@ const Styleguide = () => {
     <Container className="main">
       <Row className="main__container">
         <Col className="main__colum" xl>
-          <h1>Style guide</h1>
+          <h1 className="h1-heading">Style guide</h1>
           <p>Components designed for cultur portal</p>
-          <h2>Color palette</h2>
+          <h2 className="heading h2-heading">Color palette</h2>
           <Container>
             <Row>
-              <Col className="bg-primary">
+              <Col className="color-style bg-primary">
                 <p className="text-secondary">Primary</p>
               </Col>
-              <Col className="bg-secondary color-palette">
+              <Col className="color-style bg-secondary color-palette">
                 <p>Secondary</p>
               </Col>
-              <Col className="bg-info">
+              <Col className="color-style bg-info">
                 <p>Info</p>
               </Col>
-              <Col className="bg-light">Light</Col>
+              <Col className="color-style bg-light">Light</Col>
             </Row>
           </Container>
 
-          <h2>Typography</h2>
+          <h2 className="heading h2-heading">Typography</h2>
           <Container>
             <Row>
               <Col>
@@ -57,7 +57,7 @@ const Styleguide = () => {
             </Row>
           </Container>
 
-          <h2>Buttons</h2>
+          <h2 className="heading h2-heading">Buttons</h2>
           <Container>
             <Row>
               <Col>
@@ -66,7 +66,7 @@ const Styleguide = () => {
             </Row>
           </Container>
 
-          <h2>Cards</h2>
+          <h2 className="heading h2-heading">Cards</h2>
           <Container>
             <Row>
               <Col>
@@ -85,7 +85,7 @@ const Styleguide = () => {
             </Row>
           </Container>
 
-          <h2>Navigation</h2>
+          <h2 className="heading h2-heading">Navigation</h2>
           <Container className="wrapper">
             <Row className="wrapper__container">
               <Col className="wrapper__colum" lg="11">
