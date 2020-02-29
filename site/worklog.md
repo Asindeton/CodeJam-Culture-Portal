@@ -7,5 +7,8 @@
 23-02-2020 - 5h continue fill russian information
 24-02-2020 - 5h fill english information for Data file
 25-02-2020 - 4h add English and Bolorussian language for List of authors page
-25-02-2020 - 10h create Global State with React Context and useReducer Hooks
+27-02-2020 - 10h create Global State with React Context and useReducer Hooks
+28-02-2020 - 10h implement site with Header, Footer and list all directors
+29-02-2020 - 10h implement site with Main
+
 
