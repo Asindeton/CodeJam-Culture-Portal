@@ -49,10 +49,10 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow className='footer-row'>
           <MDBCol md="3">
-             <img src={logo} className='logo'/>
+             <img src={logo} className='logo' alt=''/>
           </MDBCol>
           <MDBCol md="2">
-            <h5 className="title">{menu}<img src={book} /></h5>
+            <h5 className="title">{menu}<img src={book}  alt=''/></h5>
                  <ul>
                      <li><Link to="/" className='list-unstyled' >{main}</Link></li>
                      <li><Link to="/listOfAuthors/" className='list-unstyled' >{directors}</Link></li>
@@ -60,7 +60,7 @@ const Footer = () => {
                  </ul>
           </MDBCol>
           <MDBCol md="2">
-            <h5 className="title">{support}<img src={mail} /></h5>
+            <h5 className="title">{support}<img src={mail}  alt=''/></h5>
             <ul>
                 <li><Link to="/Developers/" className='list-unstyled' >{developers}</Link></li>
                 <li><Link to="/Worklog/" className='list-unstyled' >{worklog}</Link></li>
@@ -68,7 +68,7 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <MDBCol md="2">
-            <h5 className="title">BY RSSCHOOL<img src={law} /></h5>
+            <h5 className="title">BY RSSCHOOL<img src={law} alt=''/></h5>
             <ul>
                 <li><a href="https://github.com/Asindeton" className='list-unstyled' >Dmitry Legankov</a></li>
                 <li><a href="https://github.com/shebekocom" className='list-unstyled' >Nikolay Shebeko</a></li>
@@ -79,7 +79,7 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <MDBCol md="2">
-                <h5 className="title">{contacts}<img src={paper} /></h5>
+                <h5 className="title">{contacts}<img src={paper}  alt=''/></h5>
                 <button className='footer-button'>Feedback on Rsschool</button>
                 <button className='footer-button'>Submit bag</button>
           </MDBCol>

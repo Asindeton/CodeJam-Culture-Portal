@@ -1,28 +1,43 @@
-import React from "react"
-import { Link } from "gatsby"
-//
+import React, { useContext }from "react"
+
 import Layout from "../components/layout"
-//import Image from "../components/image"
+
 import SEO from "../components/seo"
 
+import {GlobalStateContext} from "../context/GlobalContextProvider"
+
+import DataForList from "../components/prepareDataForList"
+
+import HomeDirectorData from "../components/HomeDirectorData"
+
+import ProjectDescription from "../components/ProjectDescription"
+
+import {main as translate}  from "../data/dictionary"
+
+import './index.css';
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }    
 
+let currLang;
 
+  let randomNumAuthor = getRandomInt(11)
     
 const IndexPage = () => {
-  let randomAuthor = getRandomInt(11)
-  let link = `/author${randomAuthor+1}`
+    
+  const state = useContext(GlobalStateContext); 
+  
+  currLang = state.language;
+
   return (
     <Layout>
       <SEO title="Home" />
-      <div>
-        Hi!!! Author of day is number {randomAuthor+1}
-        <br/>
-        <Link to={link}> More ... </Link>
-      </div>
+
+      <HomeDirectorData language={currLang} random={randomNumAuthor}/>
+      <ProjectDescription language={currLang}/>
+      
+    
     </Layout>
   )
 

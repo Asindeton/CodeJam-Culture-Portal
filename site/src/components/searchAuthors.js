@@ -28,10 +28,10 @@ const SearchAuthor = ({searchNamePlaceholder,searchPlacePlaceholder}) => {
     <Form style={{ margin: `2rem` }} >
       <Form.Row>
         <Col onChange={(e) => {changeName(e.target.value);}}>
-          <Form.Control placeholder={searchNamePlaceholder} />
+          <Form.Control className = 'search' placeholder={searchNamePlaceholder}/>
         </Col>
         <Col onChange={(e) => {changePlace(e.target.value);}}>
-          <Form.Control placeholder={searchPlacePlaceholder} />
+          <Form.Control className = 'search' placeholder={searchPlacePlaceholder} />
         </Col>
       </Form.Row>
     </Form>

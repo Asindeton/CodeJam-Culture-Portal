@@ -1,5 +1,4 @@
-import React, { Component, Fragment, useContext } from 'react';
-import { Link } from "gatsby"
+import React, { useContext } from 'react';
 import CardOfAuthor from '../components/cardOfAuthor';
 import SearchAuthors from '../components/searchAuthors';
 
@@ -17,7 +16,6 @@ import './listOfAuthors.css';
 
 let currLang = "be";
 
-//const state = useContext(GlobalStateContext);
 
 
 let detail;

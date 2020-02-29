@@ -8,7 +8,7 @@ import {GlobalStateContext} from "../context/GlobalContextProvider"
 
 const A4 = (props) => {  
   const state = useContext(GlobalStateContext);
-  console.log(state.language);
+
   return (  
     <Layout>
       <SEO title="author 4" />
