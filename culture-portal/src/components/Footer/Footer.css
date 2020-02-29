@@ -61,7 +61,8 @@ ul {
 .footer-button:hover {
    background-color: black;
    color: white;
-   transition: 1s;
+   transition: 0.2s;
+   border-color: black;
 }
 
 .footer-button:active {

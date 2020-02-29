@@ -1,16 +1,22 @@
-import React from "react";
+import React,{useContext} from "react";
+
 import "./DirectorTimeLine.scss"
 import { Timeline, Event } from "react-timeline-scribble";
 
+import {authorData as translate} from "../../data/dictionary"
+import {GlobalStateContext} from '../../context/GlobalContextProvider'
+
+
+let title;
+let currLang;
+
 export default function DirectorTimeLine(props) {
-  const language = 'ru';
-  const languageData = {
-    "title":{
-      en:"Timeline",
-      ru:"Хроника жизни",
-      be:"Хроніка жыцця"
-    }
-  };
+   const state = useContext(GlobalStateContext);
+   let language = state.language;
+   currLang = state.language;
+
+   title = translate.title[currLang];
+
   const data = props.data.biography;
 
   let Events = data.map(item=>{
@@ -18,7 +24,7 @@ export default function DirectorTimeLine(props) {
   });
   return(
     <>
-      <h2 className='timeline__title'>{languageData.title[language]}</h2>
+      <h2 className='timeline__title'>{title}</h2>
       <div className='timeline__points'>
           <Timeline>
             {Events}

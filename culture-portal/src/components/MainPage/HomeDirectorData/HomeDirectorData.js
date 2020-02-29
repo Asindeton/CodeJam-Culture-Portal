@@ -3,14 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from "react-bootstrap/Button";
+import directorsData from '../directorsData'
 
 function getDirectorOfDay(data){
-  const directorKeysArray = Object.keys(data);
   let currentDay = new Date(Date.now()).getDate();
-  while(currentDay>directorKeysArray.length){
-    currentDay -= directorKeysArray.length
+  while(currentDay>data.length){
+    currentDay -= data.length
   }
-   return directorKeysArray[currentDay-1];
+   return data[currentDay-1];
 }
 const languageData = {
   "title":{
@@ -40,9 +40,10 @@ const languageData = {
   },
 };
 export default function HomeDirectorData(props) {
-  const {data, language} = props;
+  const data = directorsData;
+  const language = props.language;
   let directorOfDay = getDirectorOfDay(data);
-  const directorOfDayData = data[directorOfDay][language];
+  console.log(directorOfDay.filmography[0].information[0].year);
   return (
     <div className="home__director-data-wrapper">
       <Container className="home__director-data-container">
@@ -60,8 +61,8 @@ export default function HomeDirectorData(props) {
             </Row>
             <Row>
               <Col className="home__director-data-name-wrapper">
-                <span className="home__director-data-name-first">{directorOfDayData.name}</span>
-                <span className="home__director-data-name-second">{directorOfDayData.surname}</span>
+                <span className="home__director-data-name-first">{directorOfDay.name[language]}</span>
+                <span className="home__director-data-name-second">{directorOfDay.surname[language]}</span>
               </Col>
             </Row>
             <Row>
@@ -73,13 +74,13 @@ export default function HomeDirectorData(props) {
               <Col lg={{offset: 6}} className="home__director-data-point-container">
                 <Row>
               <Col className="home__director-data-point-wrapper">
-                <span className="home__director-data-point-number">{Object.keys(directorOfDayData.filmography)[0]}</span>
+                <span className="home__director-data-point-number">{directorOfDay.filmography[0].information[0].year}</span>
                 <span>{languageData.firstMovie[language]}</span></Col>
               <Col className="home__director-data-point-wrapper">
-                <span className="home__director-data-point-number">{directorOfDayData.awards}</span>
+                <span className="home__director-data-point-number">{directorOfDay.awards}</span>
                 <span>{languageData.awards[language]}</span></Col>
               <Col className="home__director-data-point-wrapper">
-                <span className="home__director-data-point-number">{Object.keys(directorOfDayData.filmography).length}</span>
+                <span className="home__director-data-point-number">{directorOfDay.filmography.length}</span>
                 <span>{languageData.filmAmount[language]}</span>
               </Col>
                 </Row>

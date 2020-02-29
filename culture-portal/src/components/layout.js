@@ -1,32 +1,26 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+ import React, {useContext} from "react"
 
-import React from "react"
-import PropTypes from "prop-types"
+ import Header from "./Header/Header"
+ import Footer from './Footer/Footer'
+ import "./layout.scss"
 
-import Header from "./Header/Header"
-import Footer from './Footer/Footer'
-import "./layout.scss"
+ import GlobalContextProvider from "./context/GlobalContextProvider.js"
+ import {GlobalStateContext, GlobalDispatchContext} from "./context/GlobalContextProvider.js"
 
-const Layout = ({ children, title }) => {
+ const Layout = (props) => {
 
-  return (
-    <>
-      <Header siteTitle={title} />
-      <div>
-        <main>{children}</main>
-      </div>
-      <Footer />
-    </>
-  )
-}
+   const dispatch = useContext(GlobalDispatchContext);
+   const state = useContext(GlobalStateContext);
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+   return (
+     <div>
+     <div>
+         <Header />
+         {props.children}
+     </div>
+       <Footer />
+     </div>
+   )
 
-export default Layout
+ }
+ export default Layout

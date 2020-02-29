@@ -1,30 +1,24 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./DirectorDescription.scss";
 
-const languageData = {
+import {authorData as translate} from "../../data/dictionary"
+import {GlobalStateContext} from '../../context/GlobalContextProvider'
 
-  "description": {
-    en: "Description",
-    ru: "Описание",
-    be: "Апісанне"
-  },
-  "yearsOfLife":
-    {
-      en: "Years of life: ",
-      ru: "Годы жизни: ",
-      be: "Гады жыцця: "
-    },
-  "placeOfBirth":
-    {
-      en: "Place of birth: ",
-      ru: "Место рождения: ",
-      be: "Месца нараджэння: "
-    },
-};
+let description;
+let yearsOfLife;
+let placeOfBirth;
+let currLang;
 export default function DirectorData(props) {
-  const data = props.data;
-  const language = 'en';
-  return (
+   const state = useContext(GlobalStateContext);
+   const data = props.data;
+   let language = state.language;
+   currLang = state.language;
+
+   description = translate.description[currLang];
+   yearsOfLife = translate.yearsOfLife[currLang];
+   placeOfBirth = translate.placeOfBirth[currLang];
+
+   return (
     <div className="director__wrapper">
       <p className="director__name-wrapper">
         <span className="director__name">{data.name[language]}</span>
@@ -32,11 +26,11 @@ export default function DirectorData(props) {
       </p>
       <img className="director__photo" src={data.picture} alt='director-image'/>
       <div className="director__description-wrapper">
-        <h4 className="director__description-title">{languageData.description[language]}</h4>
+        <h4 className="director__description-title">{description}</h4>
         <p className="director__description">{data.fullDescription[language]}</p>
-        <p className="director__description-heading">{languageData.yearsOfLife[language]}
+        <p className="director__description-heading">{yearsOfLife}
           <span className="director__description-text">{data.yearsOfLife}</span></p>
-        <p className="director__description-heading">{languageData.placeOfBirth[language]}
+        <p className="director__description-heading">{placeOfBirth}
           <span className="director__description-text">{data.placeOfBirth[language]}</span></p>
       </div>
     </div>

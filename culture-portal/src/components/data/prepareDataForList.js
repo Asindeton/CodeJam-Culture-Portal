@@ -17,7 +17,7 @@ const dataList = data.reduce ((arr, item, ind) => arr.concat({
     "ru": item.description.ru,
     "en": item.description.en,
     "be": item.description.be,
-  }
+}
 }),[]);
 
 export default dataList;
