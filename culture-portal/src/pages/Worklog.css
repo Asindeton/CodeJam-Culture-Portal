@@ -1,18 +1,23 @@
 .worklogButton{
    width: 80%;
-   height: 40px;
+   height: 60px;
    background-color: black;
    color: white;
+   font-style: antialiased;
+   letter-spacing: .2em;
 }
 .worklogButton:hover{
-   background-color: white;
-   color: black;
+   background-color: #2c2c2c;
+   transition: 1s;
+   /* color: black; */
 }
 
 .table {
    width: 80%;
    height: 100%;
    margin:0;
+   transition: 3s;
+   color :#282828;
 }
 
 .toggle{

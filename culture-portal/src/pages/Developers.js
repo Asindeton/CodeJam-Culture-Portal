@@ -1,10 +1,7 @@
 import React from 'react'
-import { Link } from "gatsby"
 
 import './Developers.css'
 import Layout from '../components/layout';
-import ReactAnimation from 'react-animation';
-import AnimateOnChange from 'react-animate-on-change';
 import { useSpring, animated as a } from "react-spring";
 
 const App = () => {
