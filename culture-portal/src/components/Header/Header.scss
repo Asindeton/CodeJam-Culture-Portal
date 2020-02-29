@@ -15,7 +15,7 @@
 
 .header__container{
   margin: 0;
-   background-color: #000;
+  background-color: #000;
   padding: auto;
 }
 
@@ -41,10 +41,12 @@
   color: #818A91;
   margin-right: 30px;
   transition: 0.2s;
-  &:hover{
-    color: #ffffff;
-    text-decoration: none;
-  }
+}
+
+.nav-main__link:hover{
+   color: white;
+   transition: 1s;
+   text-decoration: none;
 }
 .nav-second__link{
   font-weight: 600;
@@ -53,10 +55,12 @@
   margin-left: 24px;
   padding-right: 0px!important;
   transition: 0.2s;
-  &:hover{
-    color: #ffffff;
-    text-decoration: none;
-  }
+}
+
+.nav-second__link:hover{
+   color: white;
+   transition: 1s;
+   text-decoration: none;
 }
 
 .nav-second__link{

@@ -1,0 +1,25 @@
+.titleMain {
+  text-align: center;
+  width: 100%;
+}
+.flexMain {
+  display: flex;
+}
+.director {
+  display: inline-block;
+  width: 10%;
+}
+.about {
+  width: 90%;
+  padding: 3%;
+}
+@media (max-width: 999px){
+   .hide{
+    display:none;
+   }
+  .about {
+    width: 100%;
+    padding: 3%;
+    font-size: 1rem;
+  }
+}
