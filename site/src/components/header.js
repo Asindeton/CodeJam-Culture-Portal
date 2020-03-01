@@ -95,7 +95,7 @@ const Header = () => {
                 <Link className="nav-second__link" to="/Worklog/">
                   {worklog} |
                 </Link>
-                <Nav.Link className="nav-second__link" href="#dropdowm">
+                <Nav.Link className="nav-second__link">
                   <Form>
                       <Form.Control as="select" defaultValue={shortLang[currLang]} onChange={(e)=>changeLang(e.target.value)}>
                         {oneSelectArr}

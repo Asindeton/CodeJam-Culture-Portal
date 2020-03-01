@@ -19,27 +19,15 @@ function SimpleSlider(props) {
    const data = props.data;
             const IMAGES = [{
                   src: [data.galleryThree],
-                  thumbnail: [data.galleryThree],
-                  tags: [{
-                     value: [author],
-                     title: [author]
-                  }],
+                  thumbnail: [data.galleryThree],                  
                   caption: ""
                },{
                   src: [data.gallery],
-                  thumbnail: [data.gallery],
-                  tags: [{
-                     value: [author],
-                     title: [author]
-                  }],
+                  thumbnail: [data.gallery],                  
                   caption: ""
                },{
                   src: [data.galleryTwo],
-                  thumbnail: [data.galleryTwo],
-                  tags: [{
-                     value: [author],
-                     title: [author]
-                  }],
+                  thumbnail: [data.galleryTwo],                  
                   caption: ""
                }
             ]

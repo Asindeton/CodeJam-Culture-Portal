@@ -17,15 +17,15 @@
   font-size: 38px;
   line-height: 48px;
   text-transform: uppercase;
-  background-color: black;
-  color: white;
+  color: black;
   width: min-content;
 }
 .director__photo{
   grid-area: photo;
-  width: 254px;
+  width: 350px;
 }
 .director__description-wrapper{
+  padding: 1.5rem;
   grid-area: description;
 }
 .director__description-title{
