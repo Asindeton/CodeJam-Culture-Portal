@@ -68,7 +68,7 @@ const Header = () => {
     <Container className="header">
       <Row className="header__container">
         <Col className="header__colum" xl>
-          <Navbar variant="dark" expand="lg" className="header__navbar nav">
+          <Navbar variant="light" expand="lg" className="header__navbar nav">
             <Navbar.Toggle
               className="header__toggle toggle"
               aria-controls="basic-navbar-nav"
