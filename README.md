@@ -1,6 +1,6 @@
 # CodeJam-Culture-Portal
 
-##Worklog our the Team
+## Worklog our the Team
 
 Date	   |Name	           |Functionality                                         |Time
 ---------|----------------|------------------------------------------------------|---------
@@ -27,7 +27,7 @@ Date	   |Name	           |Functionality                                         
 29.02.20	|Vladimir Zhdanov|	Main page and Deploy the project	                  |  3h
 29.02.20	|Gurbanov Ali	  |  Translation of texts and connection of translation	|  3h
 
-##Score
+## Score
 
    10 Main page + page with a list of authors + author's page (only pages with content without widgets) //done
 	10 Page with team members + page with worklog  //done
@@ -51,4 +51,4 @@ Date	   |Name	           |Functionality                                         
 	20 Storybook/styleguidist/other react styleguide tool usage for the page with styles //done
 
 
-###General score : 230 
+### General score : 230 
