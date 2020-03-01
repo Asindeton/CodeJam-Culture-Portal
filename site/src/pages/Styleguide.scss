@@ -2,10 +2,18 @@
 
 .main {
   background-color: #ffffff;
+  
 }
 .wrapper{
   padding: 0px;
 }
+
+.main__container{
+   max-width: 1110px; 
+   margin: 0 auto;
+}
+
+
 
 .wrapper__colum{
   margin: 0 auto;
