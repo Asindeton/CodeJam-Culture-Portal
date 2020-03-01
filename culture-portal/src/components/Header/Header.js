@@ -12,7 +12,7 @@ import {
 } from "react-bootstrap";
 import {header as translate}  from "../data/dictionary"
 
-import "./header.scss";
+import "./Header.scss";
 import Logotype from "../../images/logo-big.png";
 
 let directors;
