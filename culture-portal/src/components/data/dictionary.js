@@ -180,16 +180,21 @@ export const developers = {
 }
 
 export const main = {
-  title: {en: 'Culture portal',
-    ru: 'Культурный портал',
-    be: 'Культурны партал'},
-  detail: {en: 'More details...',
-    ru: 'Подробней...',
-    be: 'Падрабязна...'},
-  portal: {en: 'Movie director - one of the main occupations in art cinema, a  leading participant in the process of making the film, in charge of the artistic, recreational and scenic elements of the picture. There are three areas of film direction: fiction, documentary and animated films. Before the advent of sound film director was the main task of staging gags and pantomimes. Transfer of emotions and speech by means of gestures, plastics. With the advent of sound film in the director added work setting dialog of the walls, the music and sound (voice actions: steps, the sound of the street, etc.) design, which he made with the participation of the composer and sound designer. Soundtracks are recorded separately and require special attention filmmaker. Traditionally the responsibility of director includes: definition of the main ideas of the work; definition of the general artistic style of the film; implementation of the script; actors management, both in terms of staging, and from the point of view of how it is played, and other expressive means; leadership of the cameraman; Manual Installation of the film.',
-    ru: 'Кинорежиссёр — одна из основных профессий в искусстве кино, руководящий участник процесса создания фильма, отвечающий за художественную, игровую и сценическую составляющие картины. Существует три направления кинорежиссуры: игровое, документальное и анимационное кино. До появления звукового кинематографа основной задачей режиссёра была постановка гэгов и пантомим. Передача эмоций и речи при помощи жестов, пластики. С появлением звукового кино у режиссёра добавилась работа по постановке диалоговых сцен, музыкального и звукового (озвучивание действия: шагов, звуков улицы и прочее) оформления, которое он делал при участии композитора и звукорежиссера. Звуковая дорожка записывалась отдельно и требовала особого внимания кинорежиссера. Традиционно в обязанности режиссёра входит: определение главной мысли произведения; определение общего художественного стиля фильма; реализация сценария; руководство актёрами, как с точки зрения мизансцены, так и с точки зрения манеры игры и других выразительных средств; руководство работой кинооператора; руководство монтажом фильма.',
-    be: "Кінарэжысёр - адна з асноўных прафесій у мастацтве кіно, кіруючы удзельнік працэсу стварэння фільма, які адказвае за мастацкую, гульнявую і сцэнічную складнікі карціны. Існуе тры напрамкі кінарэжысуры: ігравое, дакументальнае і анімацыйнае кіно. Да з'яўлення гукавога кінематографа асноўнай задачай рэжысёра была пастаноўка гэгов і пантомим. Перадача эмоцый і гаворкі пры дапамозе жэстаў, пластыкі. З з'яўленнем гукавога кіно ў рэжысёра дадалася праца па пастаноўцы дыялогавых сцэн, музычнага і гукавога (агучванне дзеянні: крокаў, гукаў вуліцы і іншае) афармлення, якое ён рабіў пры ўдзеле кампазітара і гукарэжысёра. Гукавая дарожка запісвалася асобна і патрабавала асаблівай увагі кінарэжысёра. Традыцыйна ў абавязкі рэжысёра ўваходзіць: вызначэнне галоўнай думкі твора; вызначэнне агульнага мастацкага стылю фільма; рэалізацыя сцэнара; кіраўніцтва акторамі, як з пункту гледжання мізансцэны, так і з пункту гледжання манеры гульні і іншых выразных сродкаў; кіраўніцтва працай кінааператара; кіраўніцтва мантажом фільма."
-  }
+   title: {
+      en: 'Culture portal',
+      ru: 'Культурный портал',
+      be: 'Культурны партал'
+   },
+   detail: {
+      en: 'More details...',
+      ru: 'Подробней...',
+      be: 'Падрабязна...'
+   },
+   portal: {
+      en: 'Movie director - one of the main occupations in art cinema, a  leading participant in the process of making the film, in charge of the artistic, recreational and scenic elements of the picture. There are three areas of film direction: fiction, documentary and animated films. Before the advent of sound film director was the main task of staging gags and pantomimes. Transfer of emotions and speech by means of gestures, plastics. With the advent of sound film in the director added work setting dialog of the walls, the music and sound (voice actions: steps, the sound of the street, etc.) design, which he made with the participation of the composer and sound designer. Soundtracks are recorded separately and require special attention filmmaker. Traditionally the responsibility of director includes: definition of the main ideas of the work; definition of the general artistic style of the film; implementation of the script; actors management, both in terms of staging, and from the point of view of how it is played, and other expressive means; leadership of the cameraman; Manual Installation of the film.',
+      ru: 'Кинорежиссёр — одна из основных профессий в искусстве кино, руководящий участник процесса создания фильма, отвечающий за художественную, игровую и сценическую составляющие картины. Существует три направления кинорежиссуры: игровое, документальное и анимационное кино. До появления звукового кинематографа основной задачей режиссёра была постановка гэгов и пантомим. Передача эмоций и речи при помощи жестов, пластики. С появлением звукового кино у режиссёра добавилась работа по постановке диалоговых сцен, музыкального и звукового (озвучивание действия: шагов, звуков улицы и прочее) оформления, которое он делал при участии композитора и звукорежиссера. Звуковая дорожка записывалась отдельно и требовала особого внимания кинорежиссера. Традиционно в обязанности режиссёра входит: определение главной мысли произведения; определение общего художественного стиля фильма; реализация сценария; руководство актёрами, как с точки зрения мизансцены, так и с точки зрения манеры игры и других выразительных средств; руководство работой кинооператора; руководство монтажом фильма.',
+      be: "Кінарэжысёр - адна з асноўных прафесій у мастацтве кіно, кіруючы удзельнік працэсу стварэння фільма, які адказвае за мастацкую, гульнявую і сцэнічную складнікі карціны. Існуе тры напрамкі кінарэжысуры: ігравое, дакументальнае і анімацыйнае кіно. Да з'яўлення гукавога кінематографа асноўнай задачай рэжысёра была пастаноўка гэгов і пантомим. Перадача эмоцый і гаворкі пры дапамозе жэстаў, пластыкі. З з'яўленнем гукавога кіно ў рэжысёра дадалася праца па пастаноўцы дыялогавых сцэн, музычнага і гукавога (агучванне дзеянні: крокаў, гукаў вуліцы і іншае) афармлення, якое ён рабіў пры ўдзеле кампазітара і гукарэжысёра. Гукавая дарожка запісвалася асобна і патрабавала асаблівай увагі кінарэжысёра. Традыцыйна ў абавязкі рэжысёра ўваходзіць: вызначэнне галоўнай думкі твора; вызначэнне агульнага мастацкага стылю фільма; рэалізацыя сцэнара; кіраўніцтва акторамі, як з пункту гледжання мізансцэны, так і з пункту гледжання манеры гульні і іншых выразных сродкаў; кіраўніцтва працай кінааператара; кіраўніцтва мантажом фільма."
+   }
 }
 
 export const authorData = {
@@ -227,5 +232,53 @@ export const authorData = {
       en: "Photo gallery",
       ru: "Фотогалерия",
       be: "Фотагалерыя"
+   }
+}
+
+export const description = {
+   team: {
+      en: 'Worklog team',
+      ru: 'Рабочий журнал команды',
+      be: 'Pабочы калектыў'
+   },
+   task: {
+      en: 'Looking task level',
+      ru: 'Посмотреть оценку',
+      be: 'Гледзячы ўзровень задач'
+   },
+   difficulties: {
+      en: 'Main difficulties for the team during implementation',
+      ru: 'Основные трудности для команды при внедрении',
+      be: 'Асноўныя складанасці для каманды падчас рэалізацыі'
+   },
+   level:{
+      en: 'Difficulties',
+      ru: 'Трудности',
+      be: 'Цяжкасці'
+   },
+   one: {
+      en: 'Using Gatsby',
+      ru: 'Использование Gatsby',
+      be: 'Выкарыстанне Gatsby'
+   },
+   two: {
+      en: 'Coordination',
+      ru: 'Kоординация',
+      be: 'Каардынацыя'
+   },
+   three: {
+      en: 'Working with git repositories with team',
+      ru: 'Работа в гит репозиторией с командой',
+      be: 'Праца з каманднымі рэпазітарамі git'
+   },
+   isMaked: {
+      en: 'done / not done',
+      ru: 'сделано / не сделано',
+      be: 'зроблена / не зроблена'
+   },
+   taskValue: {
+      en: 'The score and task name ',
+      ru: 'Оценка и название задачи',
+      be: 'Адзнака і назва задачы',
    }
 }
