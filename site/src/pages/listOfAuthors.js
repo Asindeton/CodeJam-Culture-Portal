@@ -8,7 +8,7 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 
-import {GlobalStateContext} from "../context/GlobalContextProvider" 
+import {GlobalStateContext} from "../components/context/GlobalContextProvider" 
 
 import {allAuthors as translate}  from "../data/dictionary"
 

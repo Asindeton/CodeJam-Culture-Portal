@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+.works__title {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.works__button {
+  padding-right: 28px;
+}
+
+.works__container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: 0;
+  font-family: "Source Sans Pro","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.works__wrapper {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px black solid;
+  margin: 0;
+  width: 100%;
+}
+
+.works__header {
+
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px black solid;
+  background-color: #FFFFFF;
+  height: 44px;
+  align-items: center;
+}
+
+.works__body {
+  padding: 0;
+}
+
+.works__body-item {
+  padding-left: 55px;
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  border-bottom: 1px solid black;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.works__body-item:last-of-type {
+  border-bottom: none;
+}
+
+.works__body-item-title {
+
+}
+
+.works__body-item-year {
+padding-right: 10px;
+}
+@media screen and (max-width: 744px){
+.works__title{
+  margin-top: 0px;
+}
+}

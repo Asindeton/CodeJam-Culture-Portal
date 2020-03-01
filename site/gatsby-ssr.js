@@ -1,25 +1,12 @@
-//const React = require('react')
-//const GlobalContextProvider = require ("./src/context/GlobalContextProvider");
-//
-//exports.wrapRootElement = ({element}) => {
-//  return <GlobalContextProvider>{element}</GlobalContextProvider>
-//}
+/**
+ * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/ssr-apis/
+ */
 
-//const React = require("react")
-//const { GlobalContextProvider } = require("./src/context/GlobalContextProvider")
-//
-//
-//exports.wrapRootElement = ({ element }) => {
-//  return (
-//    <GlobalContextProvider>
-//      {element}
-//    </GlobalContextProvider>
-//  )
-//}
-
-
+// You can delete this file if you're not using it
 import React from 'react'
-import GlobalContextProvider from "./src/context/GlobalContextProvider"
+import GlobalContextProvider from "./src/components/context/GlobalContextProvider"
 
 export const wrapRootElement = ({element}) => {
   return <GlobalContextProvider>{element}</GlobalContextProvider>

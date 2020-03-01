@@ -5,13 +5,13 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 
 
-import {GlobalStateContext, GlobalDispatchContext} from "../context/GlobalContextProvider" 
+import {GlobalDispatchContext} from "../components/context/GlobalContextProvider" 
 
 
 const SearchAuthor = ({searchNamePlaceholder,searchPlacePlaceholder}) => {
   
   const dispatch = useContext(GlobalDispatchContext);
-  const state = useContext(GlobalStateContext);
+//  const state = useContext(GlobalStateContext);
   
   const changeName = (val) => {    
     dispatch ({type: 'SET_NAME', payload: val})

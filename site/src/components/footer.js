@@ -11,7 +11,7 @@ import law from '../images/law.svg'
 import paper from '../images/paper-plane.svg'
 import ScrollUpButton from "react-scroll-up-button"
 
-import {GlobalStateContext} from "../context/GlobalContextProvider" 
+import {GlobalStateContext} from "../components/context/GlobalContextProvider" 
 
 import {footer as translate}  from "../data/dictionary"
 
@@ -24,7 +24,6 @@ let developers;
 let worklog;
 let styleguide;
 let contacts;
-let about;
 
 let currLang;
 
@@ -37,7 +36,6 @@ const Footer = () => {
       support = translate.support[currLang];
       main = translate.main[currLang];
       directors = translate.directors[currLang];
-      about = translate.about[currLang];
       developers = translate.developers[currLang];
       styleguide = translate.styleguide[currLang];
       worklog = translate.worklog[currLang];
@@ -56,7 +54,6 @@ const Footer = () => {
                  <ul>
                      <li><Link to="/" className='list-unstyled' >{main}</Link></li>
                      <li><Link to="/listOfAuthors/" className='list-unstyled' >{directors}</Link></li>
-                     <li><Link to="/About/" className='list-unstyled' >{about}</Link></li>
                  </ul>
           </MDBCol>
           <MDBCol md="2">

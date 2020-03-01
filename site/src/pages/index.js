@@ -4,15 +4,11 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 
-import {GlobalStateContext} from "../context/GlobalContextProvider"
-
-import DataForList from "../components/prepareDataForList"
+import {GlobalStateContext} from "../components/context/GlobalContextProvider"
 
 import HomeDirectorData from "../components/HomeDirectorData"
 
 import ProjectDescription from "../components/ProjectDescription"
-
-import {main as translate}  from "../data/dictionary"
 
 import './index.css';
 

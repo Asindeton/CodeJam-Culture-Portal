@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css";
-import {GlobalStateContext, GlobalDispatchContext} from "../context/GlobalContextProvider" 
+import {GlobalStateContext, GlobalDispatchContext} from "../components/context/GlobalContextProvider" 
 import {
   Container,
   Row,
@@ -16,7 +16,6 @@ import "./header.css";
 import Logotype from "../images/logo-big.png";
 
 let directors;
-let about;
 let developers;
 let styleguide;
 let worklog;
@@ -45,7 +44,6 @@ const Header = () => {
   
   
   directors = translate.directors[currLang];
-  about = translate.about[currLang];
   developers = translate.developers[currLang];
   styleguide = translate.styleguide[currLang];
   worklog = translate.worklog[currLang];
@@ -85,9 +83,6 @@ const Header = () => {
                 </Link>
                 <Link className="nav-main__link" to="/listOfAuthors/">
                   {directors}
-                </Link>
-                <Link className="nav-main__link" to="/About/">
-                  {about}
                 </Link>
               </Nav>
               <Nav className="header__nav-second nav-second">
