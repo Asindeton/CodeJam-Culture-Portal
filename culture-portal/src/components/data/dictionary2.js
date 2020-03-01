@@ -1,3 +1,4 @@
+import React from 'react'
 const taskInfo = [
      { "value": {
         "en": `10   Main page + page with a list of authors + author's page (only pages with cont"en"t without widgets)`,

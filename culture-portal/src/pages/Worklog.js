@@ -3,7 +3,7 @@ import React, {Component, useState, useContext} from 'react'
 import Layout from '../components/layout';
 import {description as translate} from "../components/data/dictionary"
 import taskInfo from "../components/data/dictionary2"
-import worklogData from './WorklogD';
+import worklogData from "../components/data/dictionary3"
 import {GlobalStateContext} from '../components/context/GlobalContextProvider'
 import './Worklog.css'
 
