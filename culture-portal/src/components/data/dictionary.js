@@ -280,5 +280,25 @@ export const description = {
       en: 'The score and task name ',
       ru: 'Оценка и название задачи',
       be: 'Адзнака і назва задачы',
+   },
+   workTask:{
+      en: 'Date',
+      ru: 'Дата',
+      be: 'Дата'
+   },
+   workName:{
+      en: 'Name',
+      ru: 'Имя',
+      be: 'Iмя'
+   },
+   workFunctionality:{
+      en:'Functionality',
+      ru: 'Функциональность',
+      be:'Функцыянальнасць'
+   },
+   workTime:{
+      en: 'Time',
+      ru: 'Время',
+      be: 'Час'
    }
 }

@@ -19,6 +19,11 @@ let level;
 let value;
 let isMaked;
 let taskValue;
+let workTask;
+let workName;
+let workFunctionality;
+let workTime;
+
 
 const url = "https://obhajiwala.com/assets/less/icons/ionicons/src/ios7-minus-empty.svg";
 
@@ -26,6 +31,10 @@ const Toggle = () => {
    const state = useContext(GlobalStateContext);
    currLang = state.language;
    team = translate.team[currLang];
+   workTask = translate.workTask[currLang];
+   workName = translate.workName[currLang];
+   workFunctionality = translate.workFunctionality[currLang];
+   workTime = translate.workTime[currLang];
 
   const [isToggledOn, setToggle] = useState(false)
   return (
@@ -35,16 +44,16 @@ const Toggle = () => {
      {isToggledOn ? 'ON' : [team] }</button>
      {isToggledOn &&  <table className='table' responsive>
                <tr>
-                <th>Task</th>
-                <th>Name</th>
-                <th>Functionality</th>
-                <th>Time</th>
+                <th>{workTask}</th>
+                <th>{workName}</th>
+                <th>{workFunctionality}</th>
+                <th>{workTime}</th>
                 </tr>
                 {worklogData.map((newWorklog)=>(
                   <tr>
                   <td>{newWorklog.task}</td>
-                  <td>{newWorklog.name}</td>
-                  <td>{newWorklog.functionality}</td>
+                  <td>{newWorklog.name[currLang]}</td>
+                  <td>{newWorklog.functionality[currLang]}</td>
                   <td>{newWorklog.time}</td>
                   </tr>
                 ))}
