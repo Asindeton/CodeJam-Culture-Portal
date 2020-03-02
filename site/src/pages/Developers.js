@@ -4,7 +4,10 @@ import './Developers.css'
 import Layout from '../components/layout';
 import { useSpring, animated as a } from "react-spring";
 
-import {GlobalStateContext} from '../components/context/GlobalContextProvider'
+import {GlobalStateContext} from '../components/context/GlobalContextProvider';
+import {  
+  Button
+} from "react-bootstrap";
 
 import SEO from "../components/seo"
 
@@ -14,8 +17,6 @@ let info;
 let spring;
 let intro;
 const App = ({lang}) => {
-//      const stateA = useContext(GlobalStateContext);
-//      let currLang = stateA.language;
 
       info = translate.info[lang];
       intro = translate.intro[lang];
@@ -28,9 +29,9 @@ const App = ({lang}) => {
       return (
     <div className="contain">
       <div className="button-container">
-        <button onClick={() => displayGreeting(a => !a)} className="button">
+        <Button variant="secondary" onClick={() => displayGreeting(a => !a)} className="button">
          {info}
-        </button>
+        </Button>
       </div>
       {!greetingStatus ? (
         <div className="intro">{intro}</div>
@@ -85,8 +86,6 @@ const Developers = () => {
                    <h2><a href="https://github.com/Kr-Mx" className='team-link' >{maksim}</a></h2>
                    <App lang={currLang}/>
                 </li>
-             </ul>
-             <ul className='team'>
                 <li className='team-list' >
                    <div className='photo photo__4'/>
                    <h2><a href="https://github.com/GurbanovAli" className='team-link' >{ali}</a></h2>

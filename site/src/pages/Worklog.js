@@ -1,5 +1,7 @@
 import React, {Component, useState, useContext} from 'react'
 
+import SEO from "../components/seo"
+
 import Layout from '../components/layout';
 import {description as translate} from "../components/data/dictionary"
 import taskInfo from "../components/data/dictionary2"
@@ -127,6 +129,9 @@ function ToggleThree() {
 function Worklog() {
       return(
          <Layout>
+        
+            <SEO title="Worklog" />
+
             <Toggle />
             <ToggleTwo />
             <ToggleThree />
