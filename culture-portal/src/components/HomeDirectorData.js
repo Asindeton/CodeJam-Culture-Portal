@@ -2,10 +2,10 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import directorsData from "../directorsData"
+import directorsData from "../data/directorsData"
 import { Link } from "gatsby"
 
-import "./HomeDirectorData.scss";
+import "./HomeDirectorData.css";
 
 function getDirectorOfDay(data, random){
 //  let currentDay = new Date(Date.now()).getDate();
@@ -70,9 +70,9 @@ export default function HomeDirectorData(props) {
               </Col>
             </Row>
             <Row>
-              <Col >
+              <Col >    
 
-              <Link to={'/author' + (random+1)}  className="home__director-data-button">{languageData.button[language]}</Link>
+              <Link to={'/Author' + (random+1)}  className="home__director-data-button">{languageData.button[language]}</Link>
 
               </Col>
             </Row>

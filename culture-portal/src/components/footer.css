@@ -8,8 +8,8 @@
 }
 
 .title {
-   color: antiquewhite;
-   font-family: 'Times New Roman';
+   color: white;
+   font-family: 'Palatino', sans-serif;
    font-language-override: normal;
    font-size: 18px;
    line-height: 30px;
@@ -27,11 +27,10 @@
 
 .list-unstyled {
    font-style: normal;
-   color: gray;
+   color: #818A91;
    font-size: 16px;
-   font-family: 'Palatino';
-   font-weight: 600;
-   font-variant-east-asian: normal;
+   font-family: 'Palatino', sans-serif;
+   font-weight: 500;
 }
 
 ul {
@@ -41,6 +40,7 @@ ul {
 .list-unstyled:hover{
    color: white;
    transition: 1s;
+   text-decoration: none;
 }
 
 .logo {
@@ -58,7 +58,7 @@ ul {
    outline: none;
 }
 
-.footer-button:hover {
+.footer-button:hover{
    background-color: black;
    color: white;
    transition: 0.2s;
@@ -70,6 +70,7 @@ ul {
    color: white;
    box-shadow: 0 5px #666;
    transform: translateY(4px);
+   border-color: black;
 }
 
 .thisDiv {
@@ -78,8 +79,8 @@ ul {
 }
 
 .container-fluid{
-   color: antiquewhite;
-   font-family: 'Times New Roman';
+   color: white;
+   font-family: 'Palatino', sans-serif;
 }
 
 @media (max-width: 540px){

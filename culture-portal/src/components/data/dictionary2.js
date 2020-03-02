@@ -1,12 +1,12 @@
 import React from 'react'
 const taskInfo = [
      { "value": {
-        "en": `10   Main page + page with a list of authors + author's page (only pages with cont"en"t without widgets)`,
+        "en": `10   Main page + page with a list of authors + author's page (only pages with content without widgets)`,
         "ru": `10   Главная страница + страница со списком авторов + страница автора (только страницы с контентом без виджетов)`,
         "be": `10   Галоўная старонка + старонка са спісам аўтараў + старонка аўтара (толькі старонкі са зместам без віджэтаў)`
    }},
      { "value":{
-        "en": '10   Page with team mem"be"rs + page with worklog',
+        "en": '10   Page with team members + page with worklog',
         "ru": '10   Страница с членами команды + страница с рабочим журналом ',
         "be": '10   Cтаронка з членамі каманды + старонка з працоўным журналам '
    }},
@@ -71,7 +71,7 @@ const taskInfo = [
         "be": '10    Партал мае трэцюю мову'
    }},
      { "value":{
-        "en": '10    Confid"en"ce of the project pres"en"tation',
+        "en": '10    Confidence of the project presentation',
         "ru": '10   Уверенность в презентации проекта ',
         "be": '10   Упэўненасць у прэзентацыі праекта '
    }},
@@ -81,7 +81,7 @@ const taskInfo = [
         "be": '10    Праект зроблены з выкарыстаннем gatsbyjs'
    }},
      { "value":{
-        "en": '10    Cont"en"tful / netlify cms is used for cont"en"t managem"en"t',
+        "en": '10    Contentful / netlify cms is used for content management',
         "ru": '10    Контент / Netlify CMS используется для управления контентом ',
         "be": '10    Кантент / netlify cms выкарыстоўваецца для кіравання кантэнтам '
    }},

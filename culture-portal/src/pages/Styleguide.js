@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from '../components/layout';
+import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 import "./scss/custom.scss";
 import {
@@ -8,33 +10,41 @@ import {
   Col,
   Navbar,
   Nav,
-  DropdownButton,
-  Dropdown,
   Button,
-  Card
+  Card,
+  Form
 } from "react-bootstrap";
+
+
 import "./Styleguide.scss";
 import Logotype from "../images/logo-big.png";
 
+
+
 const Styleguide = () => {
+  function handleClick(e) {
+    e.preventDefault();
+  }
   return (
      <Layout>
+    <SEO title="Styleguide" />
     <Container className="main">
       <Row className="main__container">
         <Col className="main__colum" xl>
-          <h1>Style guide</h1>
+          <div className='storybook'>
+            <h1>Style guide</h1>
+            <h1><a className='story-link' target="_blank" href='https://ecstatic-ardinghelli-8d7a85.netlify.com/?path=/story/about-culture-portal--about'>
+              <button className='story-button'>Storybook</button></a></h1>
+          </div>
           <p>Components designed for cultur portal</p>
           <h2>Color palette</h2>
           <Container>
             <Row>
-              <Col className="bg-primary">
-                <p className="text-secondary">Primary</p>
+              <Col style={{ backgroundColor: "black" }}>
+                <p style={{ color: "rgb(129, 138, 145)"}}>Primary</p>
               </Col>
               <Col className="bg-secondary color-palette">
                 <p>Secondary</p>
-              </Col>
-              <Col className="bg-info">
-                <p>Info</p>
               </Col>
               <Col className="bg-light">Light</Col>
             </Row>
@@ -60,11 +70,34 @@ const Styleguide = () => {
             </Row>
           </Container>
 
+          <h2>Input</h2>
+          <Container>
+            <Row>
+              <Col>
+
+                <Form style={{ margin: `2rem` }} >
+                  <Form.Row>
+                    <Col>
+                      <Form.Control className = 'search' placeholder={'Input'} type="number" readonly/>
+                    </Col>
+                  </Form.Row>
+                </Form>
+
+
+              </Col>
+            </Row>
+          </Container>
+
           <h2>Buttons</h2>
           <Container>
             <Row>
               <Col>
-                <Button variant="primary">Primary</Button>{" "}
+                <Link to={''} className="description-button" onClick={handleClick} >Button</Link>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Link to={''} className="data-button" onClick={handleClick} >Button</Link>
               </Col>
             </Row>
           </Container>
@@ -73,15 +106,14 @@ const Styleguide = () => {
           <Container>
             <Row>
               <Col>
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                <Card bg="light" style={{ width: "18rem" }}>
+                  <Card.Img className="img__animation" variant="top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
+                    <Card.Title className='center text-muted'>Card Title</Card.Title>
+                    <Card.Text className='text-muted'>
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
                 </Card>
               </Col>
@@ -92,7 +124,7 @@ const Styleguide = () => {
           <Container className="wrapper">
             <Row className="wrapper__container">
               <Col className="wrapper__colum" lg="11">
-                <Navbar bg="dark" expand="md" className="header__navbar nav">
+                <Navbar expand="md" className="header__navbar nav">
                   <Navbar.Brand
                     className="header__logotype logotype"
                     href="#home"
@@ -125,17 +157,14 @@ const Styleguide = () => {
                       <Nav.Link bsPrefix="nav-second__link" href="#worklog">
                         Worklog
                       </Nav.Link>
-                      <Nav.Link className="nav-second__link" href="#dropdowm">
-                        <DropdownButton
-                          size="sm"
-                          bsPrefix="nav_second__dropdown"
-                          id="dropdown-basic-button"
-                          title="EN"
-                        >
-                          <Dropdown.Item href="#/action-1">EN</Dropdown.Item>
-                          <Dropdown.Item href="#/action-2">RU</Dropdown.Item>
-                          <Dropdown.Item href="#/action-3">BE</Dropdown.Item>
-                        </DropdownButton>
+                      <Nav.Link className="nav-second__link" >
+                      <Form>
+                          <Form.Control as="select">
+                              <option>EN</option>
+                              <option>RU</option>
+                              <option>BY</option>
+                          </Form.Control>
+                        </Form>
                       </Nav.Link>
                     </Nav>
                   </Navbar.Collapse>

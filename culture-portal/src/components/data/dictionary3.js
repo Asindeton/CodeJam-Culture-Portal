@@ -60,7 +60,7 @@ const worklogData = [
       "be": 'Максім Крышнеў'
    },
    "functionality": {
-      "en": `Author's page contains "time"line`,
+      "en": `Author's page contains "timeline`,
       "ru": `Страница автора содержит строку время`,
       "be": `Старонка аўтара змяшчае радок" час `
    },
@@ -231,19 +231,61 @@ const worklogData = [
    "functionality": {
       "en": 'Worklog page',
       "ru": 'Рабочий журнал',
-      "be": 'Рабочий журнал',
+      "be": 'Рабочий журнал'
    },
    "time": '2h'
 }, {
-   "task": '',
-   "name": '',
-   "functionality": '',
-   "time": ''
+   "task": '29.02.20',
+   "name": {
+      "en": 'Gurbanov Ali',
+      "ru": 'Гурбанов Али',
+      "be": 'Гурбанаў Алі',
+   },
+   "functionality": {
+      "en": 'Project assembly',
+      "ru": 'Cборка проекта',
+      "be": 'Зборка праекта'
+   },
+   "time": '7h'
 }, {
-   "task": '',
-   "name": '',
-   "functionality": '',
-   "time": ''
+   "task": '29.02.20',
+   "name": {
+      "en": 'Vladimir Zhdanov',
+      "ru": 'Владимир Жданов',
+      "be": 'Уладзімір Жданаў'
+   },
+   "functionality": {
+      "en": 'Project assembly',
+      "ru": 'Cборка проекта',
+      "be": 'Зборка праекта'
+   },
+   "time": '7h'
+}, {
+   "task": '29.02.20',
+   "name": {
+      "en": 'Vladimir Zhdanov',
+      "ru": 'Владимир Жданов',
+      "be": 'Уладзімір Жданаў'
+   },
+   "functionality": {
+      "en": "Main page and Deploy the project",
+      "ru": "Главная страница и Развертывание проекта",
+      "be": "Галоўная старонка і разгортванне праекта"
+   },
+   "time": '3h'
+},{
+   "task": '29.02.20',
+   "name": {
+      "en": 'Gurbanov Ali',
+      "ru": 'Гурбанов Али',
+      "be": 'Гурбанаў Алі'
+   },
+   "functionality": {
+      "en": "Translation of texts and connection of translation",
+      "ru": "Перевод текстов и подключение перевода",
+      "be": "Пераклад тэкстаў і падлучэнне перакладу"
+   },
+   "time": '3h'
 }];
 
 
