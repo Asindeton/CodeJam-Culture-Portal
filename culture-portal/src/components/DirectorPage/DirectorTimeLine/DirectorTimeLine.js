@@ -19,8 +19,8 @@ export default function DirectorTimeLine(props) {
 
   const data = props.data.biography;
 
-  let Events = data.map(item=>{
-    return <Event interval = {item.years}>{item.do[language]}</Event>
+  let Events = data.map((item, ind)=>{
+    return <Event interval = {item.years} key={ind}>{item.do[language]}</Event>
   });
   return(
     <>

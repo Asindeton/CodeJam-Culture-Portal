@@ -42,8 +42,9 @@ export default function DirectorWorks(props) {
    film = translate.film[currLang]
 
   let AccordionData = data.filmography.map((item, index) => {
+    let k=index*100;
     return (
-      <Accordion className='works__container'>
+      <Accordion className='works__container' key={k}>
         <Card className='works__wrapper'>
           <Card.Header className='works__header'>
             <CustomToggle eventKey={index}>
@@ -53,8 +54,8 @@ export default function DirectorWorks(props) {
           <Accordion.Collapse eventKey={index}>
             <Card.Body className='works__body'>
               {item.information.map((i, ind) => {
-                return (<div className='works__body-item'>
-        <span className='works__body-item-title'>
+                return (<div className='works__body-item' key={ind}>
+        <span className='works__body-item-title' >
           {i.film[language]}
         </span>
                   <span className='works__body-item-year'>
@@ -76,5 +77,6 @@ export default function DirectorWorks(props) {
       {AccordionData}
     </>
 
-  </>)
+  </>
+     )
 }

@@ -1,26 +1,26 @@
- import React, {useContext} from "react"
 
- import Header from "./Header/Header"
- import Footer from './Footer/Footer'
- import "./layout.scss"
+import React, {useContext} from "react"
 
- import GlobalContextProvider from "./context/GlobalContextProvider.js"
- import {GlobalStateContext, GlobalDispatchContext} from "./context/GlobalContextProvider.js"
 
- const Layout = (props) => {
+import Header from "./header"
+import Footer from "./footer"
+import layoutStyles from "./layout.module.css" 
 
-   const dispatch = useContext(GlobalDispatchContext);
-   const state = useContext(GlobalStateContext);
 
-   return (
-     <div>
-     <div>
-         <Header />
-         {props.children}
-     </div>
-       <Footer />
-     </div>
-   )
+const Layout = (props) => {
 
- }
- export default Layout
+
+
+  return (
+
+    <div className={layoutStyles.container}>
+    <div className={layoutStyles.content}>
+        <Header /> 
+        {props.children}
+    </div>
+      <Footer />
+    </div> 
+  )
+
+}
+export default Layout

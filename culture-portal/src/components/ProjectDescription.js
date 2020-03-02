@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby"
 
-import "./ProjectDescription.scss";
+import "./ProjectDescription.css";
 
 
 export default function ProjectDescription(props) {
@@ -104,11 +104,11 @@ export default function ProjectDescription(props) {
           </p>
         </div>
 
-
-
+    
+    
           <Link to={'/listOfAuthors'} className="home__project-description-button">{languageData.button[language]}</Link>
-
-
+    
+    
       </div>
     </div>
   )

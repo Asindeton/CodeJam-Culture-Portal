@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css";
-import {GlobalStateContext, GlobalDispatchContext} from "../context/GlobalContextProvider.js";
+import {GlobalStateContext, GlobalDispatchContext} from "../components/context/GlobalContextProvider"
 import {
   Container,
   Row,
@@ -12,11 +12,10 @@ import {
 } from "react-bootstrap";
 import {header as translate}  from "../data/dictionary"
 
-import "./Header.scss";
-import Logotype from "../../images/logo-big.png";
+import "./header.css";
+import Logotype from "../images/logo-big.png";
 
 let directors;
-let about;
 let developers;
 let styleguide;
 let worklog;
@@ -45,7 +44,6 @@ const Header = () => {
 
 
   directors = translate.directors[currLang];
-  about = translate.about[currLang];
   developers = translate.developers[currLang];
   styleguide = translate.styleguide[currLang];
   worklog = translate.worklog[currLang];
@@ -83,24 +81,21 @@ const Header = () => {
                 <Link className="nav-main__link" to="/">
                 <img src={Logotype} alt="The Movie Director" />
                 </Link>
-                <Link className="nav-main__link" to="/ListOfAuthors/">
+                <Link className="nav-main__link movie-link" to="/ListOfAuthors/">
                   {directors}
-                </Link>
-                <Link className="nav-main__link" to="/About/">
-                  {about}
                 </Link>
               </Nav>
               <Nav className="header__nav-second nav-second">
-                <Link className="nav-second__link" to="/Developers/">
+                <Link className="nav-second__link head-link" to="/Developers/">
                   {developers} |
                 </Link>
-                <Link className="nav-second__link" to="/Styleguide/">
+                <Link className="nav-second__link head-link" to="/Styleguide/">
                   {styleguide} |
                 </Link>
-                <Link className="nav-second__link" to="/Worklog/">
+                <Link className="nav-second__link head-link" to="/Worklog/">
                   {worklog} |
                 </Link>
-                <Nav.Link className="nav-second__link" href="#dropdowm">
+                <Nav.Link className="nav-second__link head-link">
                   <Form>
                       <Form.Control as="select" defaultValue={shortLang[currLang]} onChange={(e)=>changeLang(e.target.value)}>
                         {oneSelectArr}

@@ -9,14 +9,12 @@
 .worklogButton:hover{
    background-color: #2c2c2c;
    transition: 1s;
-   /* color: black; */
 }
 
 .table {
    width: 80%;
    height: 100%;
    margin:0;
-   transition: 3s;
    color :#282828;
 }
 
@@ -31,6 +29,12 @@
 th{
    background-color: black;
    color:white;
+}
+
+.icon-img{
+   width:28px;
+   margin-right: 10px;
+
 }
 
 th,td {

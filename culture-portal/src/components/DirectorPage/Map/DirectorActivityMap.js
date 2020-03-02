@@ -48,7 +48,7 @@ export default function DirectorActivityMap(props) {
      geometry={coordinates[index]}
      properties={{iconCaption: name[index]}}
      modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}
-   />
+   key={index}/>
   });
   return (<YMaps>
     <Map className="map__container" defaultState={{center: center, zoom: zoom}}>

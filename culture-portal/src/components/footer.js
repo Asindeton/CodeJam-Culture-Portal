@@ -2,18 +2,16 @@ import React, {useContext} from 'react'
 import { Link } from "gatsby"
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import './Footer.css'
+import './footer.css'
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-import logo from '../../images/logo-big.png'
-import mail from '../../images/mail.svg'
-import book from '../../images/book.svg'
-import law from '../../images/law.svg'
-import paper from '../../images/paper-plane.svg'
+import logo from '../images/logo-big.png'
+import mail from '../images/mail.svg'
+import book from '../images/book.svg'
+import law from '../images/law.svg'
+import paper from '../images/paper-plane.svg'
 import ScrollUpButton from "react-scroll-up-button"
-
-import {GlobalStateContext, } from '../context/GlobalContextProvider'
-
-import {footer as translate}  from "../data/dictionary"
+import {GlobalStateContext, } from './context/GlobalContextProvider'
+import {footer as translate}  from "./data/dictionary"
 
 let menu;
 let support;
@@ -23,7 +21,6 @@ let developers;
 let worklog;
 let styleguide;
 let contacts;
-let about;
 let dmitry;
 let nikolay;
 let maksim;
@@ -44,7 +41,6 @@ const Footer = () => {
       support = translate.support[currLang];
       main = translate.main[currLang];
       directors = translate.directors[currLang];
-      about = translate.about[currLang];
       developers = translate.developers[currLang];
       styleguide = translate.styleguide[currLang];
       worklog = translate.worklog[currLang];
@@ -71,7 +67,6 @@ const Footer = () => {
                  <ul>
                      <li><Link to="/" className='list-unstyled' >{main}</Link></li>
                      <li><Link to="/ListOfAuthors/" className='list-unstyled' >{directors}</Link></li>
-                     <li><Link to="/About/" className='list-unstyled' >{about}</Link></li>
                  </ul>
           </MDBCol>
           <MDBCol md="2">

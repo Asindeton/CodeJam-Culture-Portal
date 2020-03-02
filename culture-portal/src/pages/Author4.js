@@ -1,26 +1,25 @@
 import React from 'react';
 import DirectorActivityMap from "../components/DirectorPage/Map/DirectorActivityMap";
-import DirectorMovies from "../components/DirectorPage/Youtube/DirectorMovies";
 import DirectorWorks from "../components/DirectorPage/Works/DirectorWorks";
 import DirectorTimeLine from "../components/DirectorPage/DirectorTimeLine/DirectorTimeLine";
 import directorsData from "../components/MainPage/directorsData";
 import SimpleSlider from '../components/DirectorPage/Gallery/Gallery'
 import Layout from '../components/layout';
 import DirectorDescription from "../components/DirectorPage/DirectorDescription/DirectorDescription";
-import "../components/DirectorPage/DirectorPage.scss"
+import "../components/DirectorPage/DirectorPage.scss";
+import SEO from "../components/seo";
 
 const mapsLocation = {
-  'Всероссийский государственный институт кинематографии имени С. А. Герасимова': [55.77583, 37.63722],
-  'Новосибирск': [55.01667, 82.91667],
-  'Белорусский государственный университет': [53.89389, 27.547083],
+  'Minsk': [53.91667, 27.55],
+  'Belarusfilm': [53.9275797, 27.6276866],
 };
 
 function Author4() {
   return (
     <Layout title='Culture portal'>
+      <SEO title="Weinerovich" />    
       <div className="director__container">
       <DirectorDescription data={directorsData[3]}></DirectorDescription>
-       <DirectorMovies/>
        <DirectorWorks data={directorsData[3]}/>
 
        <SimpleSlider data={directorsData[3]} />

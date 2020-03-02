@@ -6,7 +6,9 @@ import taskInfo from "../components/data/dictionary2"
 import worklogData from "../components/data/dictionary3"
 import {GlobalStateContext} from '../components/context/GlobalContextProvider'
 import './Worklog.css'
-
+import coach from '../images/coach.svg'
+import grade from '../images/grade.svg'
+import ranking from '../images/ranking.svg'
 
 let team;
 let currLang;
@@ -41,7 +43,7 @@ const Toggle = () => {
      <>
      <div className='toggle'>
     <button className="worklogButton" onClick={() => setToggle(!isToggledOn)}>
-     {isToggledOn ? 'ON' : [team] }</button>
+     <img className='icon-img' src={coach}/>  { [team] }</button>
      {isToggledOn &&  <table className='table' responsive>
                <tr>
                 <th>{workTask}</th>
@@ -76,7 +78,7 @@ const ToggleTwo = () => {
 
           <div className='toggle'>
          <button className="worklogButton" onClick={() => setToggle(!isToggledOn)}>
-          {isToggledOn ? 'ON' : [task]}</button>
+         <img className='icon-img' src={grade}/> {[task]}</button>
           {isToggledOn &&  <table className='table' responsive>
           <tr>
             <th>{isMaked}</th>
@@ -105,7 +107,7 @@ function ToggleThree() {
    return (
       <div className='toggle'>
      <button className="worklogButton" onClick={() => setToggle(!isToggledOn)}>
-      {isToggledOn ? 'ON' : [difficulties]}</button>
+      <img className='icon-img' src={ranking}/>  {[difficulties]}</button>
       {isToggledOn && <table className='table' responsive>
           <tr>
             <th>{level}</th>

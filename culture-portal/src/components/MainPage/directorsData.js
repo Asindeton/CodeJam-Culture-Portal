@@ -1,4 +1,3 @@
-import React from 'react'
 import autor from '../../images/assets/arshanskiy1.jpg'
 import autorTwo from '../../images/assets/arshanskiy2.jpg'
 import autorThree from '../../images/assets/arshanskiy3.jpg'
@@ -30,7 +29,6 @@ import hashchevatskiThree from '../../images/assets/hashchevatski3.jpg'
 import maruhinOne from '../../images/assets/maruhin.jpg'
 import maruhinTwo from '../../images/assets/maruhin2.jpg'
 import maruhinThree from '../../images/assets/maruhin3.jpg'
-import maruhinFour from '../../images/assets/maruhin4.jpg'
 
 const directorsData = [
   {
