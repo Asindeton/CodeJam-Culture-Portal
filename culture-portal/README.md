@@ -70,4 +70,4 @@ Date	   |Name	           |Functionality                                         
 	20 Storybook/styleguidist/other react styleguide tool usage for the page with styles //done
 
 
-### General score : 230
+### General score : 280
