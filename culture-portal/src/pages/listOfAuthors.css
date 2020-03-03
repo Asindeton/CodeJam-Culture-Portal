@@ -3,20 +3,25 @@
   align-content: space-between;
   justify-content: center;
   flex-wrap: wrap;
+  transition: transform 0.2s;
 }
 
 .card:hover{
    transform: scale(1.05);
-   -webkit-transition: 0.5s ease-in-out;
-   -moz-transition: 0.5s ease-in-out;
-   -o-transition: 0.5s ease-in-out;
-   transition: 0.5s ease-in-out;
+   -webkit-transition: 0.2s ease-in-out;
+   -moz-transition: 0.2s ease-in-out;
+   -o-transition: 0.2s ease-in-out;
+   transition: 0.2s ease-in-out;
+   box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
+
 
 .card {
   margin: 2rem;
-  width: 18rem
+  width: 18rem;
+  transition: transform 0.2s;
 }
+
 .center {
   width: 100%;
   margin: 0 auto;
@@ -26,13 +31,12 @@
   position: relative
 }
 .bottom {
-  position: absolute;
-  bottom: 1rem;
+  margin-top: 1rem;
 }
 .bottom:hover {
-   color: blue;
-   transition: 1s;
+   transition: 0.3s;
    text-decoration: none;
+   text-shadow: 0 0 1px rgba(0,0,255,0.3);
 }
 .search {
   padding-left: 30px;

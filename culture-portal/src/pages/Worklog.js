@@ -1,6 +1,7 @@
 import React, {Component, useState, useContext} from 'react'
 
 import Layout from '../components/layout';
+import SEO from "../components/seo"
 import {description as translate} from "../components/data/dictionary"
 import taskInfo from "../components/data/dictionary2"
 import worklogData from "../components/data/dictionary3"
@@ -129,6 +130,7 @@ function ToggleThree() {
 function Worklog() {
       return(
          <Layout>
+          <SEO title="Worklog" />
             <Toggle />
             <ToggleTwo />
             <ToggleThree />
