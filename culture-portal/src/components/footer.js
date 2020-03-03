@@ -12,6 +12,8 @@ import paper from '../images/paper-plane.svg'
 import ScrollUpButton from "react-scroll-up-button"
 import {GlobalStateContext, } from './context/GlobalContextProvider'
 import {footer as translate}  from "./data/dictionary"
+import SubmitBug from './SubmitBug';
+
 
 let menu;
 let support;
@@ -88,10 +90,11 @@ const Footer = () => {
                 <li><a href="https://github.com/pavlenstory" className='list-unstyled' >{pavel}</a></li>
             </ul>
           </MDBCol>
+          
           <MDBCol md="2">
                 <h5 className="title">{contacts}<img src={paper} /></h5>
                 <button className='footer-button'><a href='https://rs.school/'>{feedback}</a></button>
-                <button className='footer-button'>{submit}</button>
+                <SubmitBug submit={submit}/>
           </MDBCol>
         </MDBRow>
         <ScrollUpButton />
