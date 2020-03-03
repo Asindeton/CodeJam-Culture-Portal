@@ -3,6 +3,14 @@ import Layout from '../components/layout';
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
+import mail from '../images/mail.svg'
+import book from '../images/book.svg'
+import law from '../images/law.svg'
+import paper from '../images/paper-plane.svg'
+import coach from '../images/coach.svg'
+import grade from '../images/grade.svg'
+import ranking from '../images/ranking.svg'
+
 import "./scss/custom.scss";
 import {
   Container,
@@ -99,6 +107,19 @@ const Styleguide = () => {
               <Col>
                 <Link to={''} className="data-button" onClick={handleClick} >Button</Link>
               </Col>
+            </Row>
+          </Container>
+
+          <h2>Icons</h2>
+          <Container style={{background:'black', height:'70px', marginTop:'20px', marginBottom:'20px'}}>
+            <Row>
+               <img style={{margin:'20px'}} className='icon-img' src={book}/>
+               <img style={{margin:'20px'}} className='icon-img' src={mail}/>
+               <img style={{margin:'20px'}} className='icon-img' src={law}/>
+               <img style={{margin:'20px'}}  className='icon-img' src={paper}/>
+               <img style={{margin:'20px'}} className='icon-img' src={coach}/>
+               <img style={{margin:'20px'}} className='icon-img' src={grade}/>
+               <img style={{margin:'20px'}} className='icon-img' src={ranking}/>
             </Row>
           </Container>
 

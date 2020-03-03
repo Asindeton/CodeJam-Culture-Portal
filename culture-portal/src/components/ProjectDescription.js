@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby"
 
+import Container from 'react-bootstrap/Container';
+
 import "./ProjectDescription.css";
 
 
@@ -82,6 +84,7 @@ export default function ProjectDescription(props) {
   };
   let thirdPart = languageData.thirdPart.en.map((item,index)=>{return <li key={index}>{languageData.thirdPart[language][index]}</li>});
   return (
+     <Container>
     <div className="home__project-description-wrapper">
       <div className="home__project-description-container">
         <div className="home__project-description-title-wrapper">
@@ -104,12 +107,14 @@ export default function ProjectDescription(props) {
           </p>
         </div>
 
-    
-    
-          <Link to={'/listOfAuthors'} className="home__project-description-button">{languageData.button[language]}</Link>
-    
-    
+
+
+
+          <Link to={'/ListOfAuthors'} className="home__project-description-button">{languageData.button[language]}</Link>
+
+
       </div>
     </div>
+    </Container>
   )
 }

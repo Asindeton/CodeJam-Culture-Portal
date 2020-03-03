@@ -18,7 +18,7 @@ const CardOfAuthor = ({imgName,name,years,description,detail,link}) => (
         {description}
       </Card.Text>
 
-      <Link to={'/Author' + (link+1)} className='bottom'>{detail}</Link> 
+      <Link to={'/Author' + (link+1)} className='bottom'>{detail}</Link>
 
 
 

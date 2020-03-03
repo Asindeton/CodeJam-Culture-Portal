@@ -58,6 +58,15 @@ ul {
    outline: none;
 }
 
+.footer-button>a{
+   color: black;
+   text-decoration: none;
+}
+
+.footer-button>a:hover{
+   color: white;
+}
+
 .footer-button:hover{
    background-color: black;
    color: white;
