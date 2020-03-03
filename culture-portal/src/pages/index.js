@@ -14,26 +14,24 @@ import './index.css';
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
-}    
+}
 
 let currLang;
 
   let randomNumAuthor = getRandomInt(11)
-    
+
 const IndexPage = () => {
-    
-  const state = useContext(GlobalStateContext); 
-  
+
+  const state = useContext(GlobalStateContext);
+
   currLang = state.language;
 
   return (
     <Layout>
       <SEO title="Home" />
-
       <HomeDirectorData language={currLang} random={randomNumAuthor}/>
       <ProjectDescription language={currLang}/>
-      
-    
+
     </Layout>
   )
 

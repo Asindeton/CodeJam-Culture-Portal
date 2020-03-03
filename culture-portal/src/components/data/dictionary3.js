@@ -286,7 +286,87 @@ const worklogData = [
       "be": "Пераклад тэкстаў і падлучэнне перакладу"
    },
    "time": '3h'
-}];
+},{
+   "task": '29.02.20',
+   "name": {
+      "en": 'Vladimir Zhdanov',
+      "ru": 'Владимир Жданов',
+      "be": 'Уладзімір Жданаў'
+   },
+   "functionality": {
+      "en": "Main page and Deploy the project",
+      "ru": "Главная страница и Развертывание проекта",
+      "be": "Галоўная старонка і разгортванне праекта"
+   },
+   "time": '3h'
+},{
+   "task": '29.02.20',
+   "name": {
+      "en": 'Vladimir Zhdanov',
+      "ru": 'Владимир Жданов',
+      "be": 'Уладзімір Жданаў'
+   },
+   "functionality": {
+      "en": "Change Developer page ",
+      "ru": "Изменение страницы разработчиков",
+      "be": "Змена старонкі распрацоўшчыкаў"
+   },
+   "time": '1h'
+},{
+   "task": '29.02.20',
+   "name": {
+      "en": 'Gurbanov Ali',
+      "ru": 'Гурбанов Али',
+      "be": 'Гурбанаў Алі'
+   },
+   "functionality": {
+      "en": "Netlify CMS",
+      "ru": "Netlify CMS/ управления контентом",
+      "be": "Netlify CMS/ кіраванне контентом"
+   },
+   "time": '1h'
+},{
+   "task": '01.03.20',
+   "name": {
+      "en": 'Gurbanov Ali',
+      "ru": 'Гурбанов Али',
+      "be": 'Гурбанаў Алі'
+   },
+   "functionality": {
+      "en": "Did Storybook",
+      "ru": "Сделал Storybook",
+      "be": "зрабіў Storybook"
+   },
+   "time": '4h'
+},{
+   "task": '01.03.20',
+   "name": {
+      "en": 'Vladimir Zhdanov',
+      "ru": 'Владимир Жданов',
+      "be": 'Уладзімір Жданаў'
+   },
+   "functionality": {
+      "en": "Fixed styles",
+      "ru": "Изменение стилей",
+      "be": "змены стылю"
+   },
+   "time": '3h'
+},{
+   "task": '03.03.20',
+   "name": {
+      "en": 'Gurbanov Ali',
+      "ru": 'Гурбанов Али',
+      "be": 'Гурбанаў Алі'
+   },
+   "functionality": {
+      "en": "Presentation this project Culture Portal  ",
+      "ru": "Презентация проекта Культурный Портал",
+      "be": "Прэзентацыя праекта Культурны Партал"
+   },
+   "time": '10m'
+}
+
+];
 
 
 export default worklogData

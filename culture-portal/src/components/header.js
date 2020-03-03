@@ -79,7 +79,7 @@ const Header = () => {
             >
               <Nav className="header__nav-primary nav-main">
                 <Link className="nav-main__link" to="/">
-                <img src={Logotype} alt="The Movie Director" />
+                <img className='img-item' src={Logotype} alt="The Movie Director" />
                 </Link>
                 <Link className="nav-main__link movie-link" to="/ListOfAuthors/">
                   {directors}

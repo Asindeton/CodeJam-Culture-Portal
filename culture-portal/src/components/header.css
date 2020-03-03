@@ -23,6 +23,11 @@
   margin-right: 44px;
 }
 
+.img-item:hover {
+   transform: scale(1);
+
+}
+
 .header__navigation{
   justify-content: space-between;
 }

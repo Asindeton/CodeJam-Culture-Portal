@@ -8,7 +8,7 @@ Date	   |Name	           |Functionality                                         
 18.02.20	|Nikolay Shebeko |   Create maket in figma                              | 	3h
 18.02.20	|Maksim Kryshneu |	Create maket in figma	                           |  2h
 18.02.20	|Nikolay Shebeko |	Design UI                                          | 	3h
-19.02.20	|Maksim Kryshneu |	Author's page contains "time"line                  |	2h
+19.02.20	|Maksim Kryshneu |	Author's page contains   timeline                  |	2h
 19.02.20	|Maksim Kryshneu |	Author's page contains video overlay               |	1h
 20.02.20 |Vladimir Zhdanov|	page with a list of authors	                     |  5h
 21.02.20	|Gurbanov Ali	  |   Author's page contains photo gallery               |	2h
@@ -26,6 +26,12 @@ Date	   |Name	           |Functionality                                         
 29.02.20	|Vladimir Zhdanov|	Project assembly	                                 |  7h
 29.02.20	|Vladimir Zhdanov|	Main page and Deploy the project	                  |  3h
 29.02.20	|Gurbanov Ali	  |  Translation of texts and connection of translation	|  3h
+29.09.20 |Gurbanov Ali    |   Netlify CMS                                        |  1h
+29.09.20 |Vladimir Zhdanov|   Change Developer page                              |  1h
+01.03.20 |Gurvanov Ali    |   Did Storybook                                      |  4h
+01.03.20 |Vladimir Zhdanov|   Fixed styles                                       |  3h
+03.03.20 |Gurbaov  Ali    |   Presentation this Culture Portal                   |  10m
+
 
 ## Score
 
@@ -70,4 +76,4 @@ Date	   |Name	           |Functionality                                         
 	20 Storybook/styleguidist/other react styleguide tool usage for the page with styles //done
 
 
-### General score : 230
+### General score : 280
