@@ -10,6 +10,8 @@ import DirectorDescription from "../components/DirectorPage/DirectorDescription/
 import "../components/DirectorPage/DirectorPage.scss";
 import SEO from "../components/seo";
 
+
+
 const mapsLocation = {
   'Dnipro': [48.4666008, 34.72],
   'Belarusian State Academy of Arts': [53.9226577, 27.5988599],
