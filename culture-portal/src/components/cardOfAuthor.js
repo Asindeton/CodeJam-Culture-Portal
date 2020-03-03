@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 const CardOfAuthor = ({imgName,name,years,description,detail,link}) => (
   <Card bg="light" style={{ width: '16rem' }}>
       <div style={{ maxWidth: `16rem`, marginBottom: `1.45rem` }}>
-        <Image imgName={imgName}/>
+        <Image imgName={imgName} className='radius'/>
       </div>
     <Card.Body>
       <Card.Subtitle style={{ marginBottom: `1.45rem` }} className='center mb-2'>{name}</Card.Subtitle >

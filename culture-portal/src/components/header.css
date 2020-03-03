@@ -50,7 +50,7 @@
 
 .nav-main__link:hover{
    color: white;
-   transition: 1s;
+   transition: 0.2s;
    text-decoration: none;
 }
 .nav-second__link{
@@ -62,17 +62,20 @@
   transition: 0.2s;
 }
 
+.movie-link {
+  transition: transform 0.2s;
+}
+
 .movie-link:hover{
-   transform: scale(1.1);
-   -webkit-transition: 0.5s ease-in-out;
-   -moz-transition: 0.5s ease-in-out;
-   -o-transition: 0.5s ease-in-out;
-   transition: 0.5s ease-in-out;
-   border-bottom: 1px solid;
+   transform: scale(1.05);
+   -webkit-transition: 0.2s ease-in-out;
+   -moz-transition: 0.2s ease-in-out;
+   -o-transition: 0.2s ease-in-out;
+   transition: 0.2s ease-in-out;
 }
 
 .head-link:hover{
-   transform: scale(1.1);
+   transform: scale(1.05);
    -webkit-transition: 0.5s ease-in-out;
    -moz-transition: 0.5s ease-in-out;
    -o-transition: 0.5s ease-in-out;
@@ -92,7 +95,7 @@
 
 .nav-second__link:hover{
    color: white;
-   transition: 1s;
+   transition: 0.2s;
    text-decoration: none;
 }
 
@@ -157,5 +160,6 @@
   }
   .nav-main__link, .nav-second__link{
     margin: 0;
+    text-decoration: none;
   }
 }

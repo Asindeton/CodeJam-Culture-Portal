@@ -87,13 +87,13 @@ const Header = () => {
               </Nav>
               <Nav className="header__nav-second nav-second">
                 <Link className="nav-second__link head-link" to="/Developers/">
-                  {developers} |
+                  {developers} 
                 </Link>
                 <Link className="nav-second__link head-link" to="/Styleguide/">
-                  {styleguide} |
+                  {styleguide} 
                 </Link>
                 <Link className="nav-second__link head-link" to="/Worklog/">
-                  {worklog} |
+                  {worklog} 
                 </Link>
                 <Nav.Link className="nav-second__link head-link">
                   <Form>

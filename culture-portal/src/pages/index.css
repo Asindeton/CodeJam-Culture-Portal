@@ -10,19 +10,6 @@
   width: 10%;
 }
 
-.director__container{
-   margin-top: 30px;
-   padding: 2px;
-}
-
-.director__container:hover{
-   transform: scale(1.01);
-   -webkit-transition: 1s ease-in-out;
-   -moz-transition: 1s ease-in-out;
-   -o-transition: 1s ease-in-out;
-   transition: 1s ease-in-out;
-
-}
 .about {
   width: 90%;
   padding: 3%;
