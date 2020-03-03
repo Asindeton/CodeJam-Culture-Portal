@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CodeJam-Culture-Portal
 
-## Available Scripts
+## Worklog our the Team
 
-In the project directory, you can run:
+Date	   |Name	           |Functionality                                         |Time
+---------|----------------|------------------------------------------------------|---------
+18.02.20	|Dmitry Legankov |	Create maket in trello                             |	2h
+18.02.20	|Nikolay Shebeko |   Create maket in figma                              | 	3h
+18.02.20	|Maksim Kryshneu |	Create maket in figma	                           |  2h
+18.02.20	|Nikolay Shebeko |	Design UI                                          | 	3h
+19.02.20	|Maksim Kryshneu |	Author's page contains   timeline                  |	2h
+19.02.20	|Maksim Kryshneu |	Author's page contains video overlay               |	1h
+20.02.20 |Vladimir Zhdanov|	page with a list of authors	                     |  5h
+21.02.20	|Gurbanov Ali	  |   Author's page contains photo gallery               |	2h
+21.02.20	|Maksim Kryshneu |   Author's page contains map	                        |  2h
+21.02.20	|Dmitry Legankov |   Data file	                                       |  6h
+22.02.20	|Vladimir Zhdanov|   Data file                                          |	3h
+22.02.20	|Maksim Kryshneu |	Data file                                          |	2h
+22.02.20	|Gurbanov Ali	  |   Developer page	                                    |  3h
+22.02.20	|Gurbanov Ali	  |   Project is made using gatsbyjs                     |	1h
+22.02.20	|Vladimir Zhdanov|	Project is made using gatsbyjs                     |	1h
+27.02.20	|Vladimir Zhdanov|	Connecting Languages                               |	3h
+27.02.20	|Maksim Kryshneu |	styles in all page and Styleguide page	            |  4h
+27.02.20	|Gurbanov Ali    |	Worklog page                                       |	2h
+29.02.20	|Gurbanov Ali	  |   Project assembly                                   |	7h
+29.02.20	|Vladimir Zhdanov|	Project assembly	                                 |  7h
+29.02.20	|Vladimir Zhdanov|	Main page and Deploy the project	                  |  3h
+29.02.20	|Gurbanov Ali	  |  Translation of texts and connection of translation	|  3h
+29.09.20 |Gurbanov Ali    |   Netlify CMS                                        |  1h
+29.09.20 |Vladimir Zhdanov|   Change Developer page                              |  1h
+01.03.20 |Gurvanov Ali    |   Did Storybook                                      |  4h
+01.03.20 |Vladimir Zhdanov|   Fixed styles                                       |  3h
+03.03.20 |Gurbaov  Ali    |   Presentation this Culture Portal                   |  10m
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Score
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+   10 Main page + page with a list of authors + author's page (only pages with content without widgets) //done
 
-### `npm test`
+	10 Page with team members + page with worklog  //done
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+	10 Page with list of authors contains search widget  //done
 
-### `npm run build`
+	20 Portal has two languages   //done
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	20 Portal has page with styleguide  //done
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+	10 Mobile version is okey  //done
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+	10 Ipad/tablet version is okey  //done
 
-### `npm run eject`
+	10 Author's page contains timeline  //done
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+	10 Author's page contains video overlay  //done
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+	20 Author's page contains photo gallery  //done
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+	10 Author's page contains map (geowidget)   //done
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+	from 0 to 20 Design (typography, icons, colors, links + buttons + input are styled)   //done
 
-## Learn More
+	20 Material-ui / bootstrap is used  //done
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+	10 Portal has third language   //done
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	10 Confid"en"ce of the project presentation  //will done
 
-### Code Splitting
+	10 Project is made using gatsbyjs //done
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+	10 Contentful / netlify cms is used for content management   //not done
 
-### Analyzing the Bundle Size
+	20 Animations / special effects like paralax //done
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+	up to 20 Outstanding design  //done
 
-### Making a Progressive Web App
+	20 Storybook/styleguidist/other react styleguide tool usage for the page with styles //done
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### General score : 280

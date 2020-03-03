@@ -1,7 +1,10 @@
 import React from "react";
 import Layout from '../components/layout';
 import SEO from "../components/seo"
-import { Link } from "gatsby"
+
+import {  
+  Form
+} from "react-bootstrap";
 
 import "./scss/custom.scss";
 import {
@@ -11,20 +14,12 @@ import {
   Navbar,
   Nav,
   Button,
-  Card,
-  Form
+  Card
 } from "react-bootstrap";
-
-
 import "./Styleguide.scss";
 import Logotype from "../images/logo-big.png";
 
-
-
 const Styleguide = () => {
-  function handleClick(e) {
-    e.preventDefault();
-  }
   return (
      <Layout>
     <SEO title="Styleguide" />
@@ -36,11 +31,14 @@ const Styleguide = () => {
           <h2>Color palette</h2>
           <Container>
             <Row>
-              <Col style={{ backgroundColor: "black" }}>
-                <p style={{ color: "rgb(129, 138, 145)"}}>Primary</p>
+              <Col className="bg-primary">
+                <p className="text-secondary">Primary</p>
               </Col>
               <Col className="bg-secondary color-palette">
                 <p>Secondary</p>
+              </Col>
+              <Col className="bg-info">
+                <p>Info</p>
               </Col>
               <Col className="bg-light">Light</Col>
             </Row>
@@ -66,35 +64,12 @@ const Styleguide = () => {
             </Row>
           </Container>
 
-          <h2>Input</h2>
-          <Container>
-            <Row>
-              <Col>
-                
-                <Form style={{ margin: `2rem` }} >
-                  <Form.Row>
-                    <Col>
-                      <Form.Control className = 'search' placeholder={'Input'} type="number" readonly/>
-                    </Col>                    
-                  </Form.Row>
-                </Form>
-    
-    
-              </Col>   
-            </Row>
-          </Container>    
-
           <h2>Buttons</h2>
           <Container>
             <Row>
               <Col>
-                <Link to={''} className="description-button" onClick={handleClick} >Button</Link>                
-              </Col>   
-            </Row>
-            <Row>
-              <Col>
-                <Link to={''} className="data-button" onClick={handleClick} >Button</Link>             
-              </Col>   
+                <Button variant="primary">Primary</Button>{" "}
+              </Col>
             </Row>
           </Container>
 
@@ -103,7 +78,7 @@ const Styleguide = () => {
             <Row>
               <Col>
                 <Card bg="light" style={{ width: "18rem" }}>
-                  <Card.Img className="img__animation" variant="top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
+                  <Card.Img variant="top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" />
                   <Card.Body>
                     <Card.Title className='center text-muted'>Card Title</Card.Title>
                     <Card.Text className='text-muted'>
@@ -120,7 +95,7 @@ const Styleguide = () => {
           <Container className="wrapper">
             <Row className="wrapper__container">
               <Col className="wrapper__colum" lg="11">
-                <Navbar expand="md" className="header__navbar nav">
+                <Navbar bg="dark" expand="md" className="header__navbar nav">
                   <Navbar.Brand
                     className="header__logotype logotype"
                     href="#home"
